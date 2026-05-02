@@ -75,12 +75,22 @@ export function PianoRoll({
   }, [isPcMode, highestMidi, lowestMidi]);
 
   const beatMarkers = useMemo(() => {
-    return Array.from({ length: Math.ceil(totalBeats) }, (_, i) => ({
-      beat: i + 1,
-      x: i * BEAT_WIDTH,
-      isBarLine: (i + 1) % 4 === 0,
-    }));
-  }, [totalBeats]);
+    const timeSigs = composition?.timeSigChanges?.length
+      ? [...composition.timeSigChanges].sort((a, b) => a.beat - b.beat)
+      : [{ beat: 0, numerator: 4, denominator: 4 }];
+
+    return Array.from({ length: Math.ceil(totalBeats) }, (_, i) => {
+      // Find the active time signature at beat i
+      let activeSig = timeSigs[0];
+      for (const sig of timeSigs) {
+        if (sig.beat <= i) activeSig = sig;
+      }
+      // beatsPerBar in quarter-note units: e.g. 5/4 → 5, 6/8 → 3, 4/4 → 4
+      const beatsPerBar = activeSig.numerator * (4 / activeSig.denominator);
+      const isBarLine = i > 0 && Math.abs(i % beatsPerBar) < 0.01;
+      return { beat: i + 1, x: i * BEAT_WIDTH, isBarLine };
+    });
+  }, [totalBeats, composition?.timeSigChanges]);
 
   const gridBodyHeight = rows.length * ROW_HEIGHT;
   const contentMinHeight = TIMELINE_HEIGHT + gridBodyHeight;

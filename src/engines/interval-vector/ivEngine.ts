@@ -12,6 +12,8 @@ export interface IvEngineParams {
   seed: number;
   bars: number;
   tempo: number;
+  timeSigNumerator: number;
+  timeSigDenominator: number;
   targetSets: PcSetEntry[];
   commonTones: number;
   registerLow: number;
@@ -27,6 +29,8 @@ export const DEFAULT_IV_PARAMS: IvEngineParams = {
   seed: Date.now(),
   bars: 8,
   tempo: 100,
+  timeSigNumerator: 4,
+  timeSigDenominator: 4,
   targetSets: [],
   commonTones: 2,
   registerLow: 3,
@@ -85,7 +89,8 @@ function minimalVoiceLeading(from: PitchClass[], to: PitchClass[]): { from: Pitc
 
 export function generateIv(params: IvEngineParams): Composition {
   const rng = createRng(params.seed);
-  const totalBeats = params.bars * 4;
+  const beatsPerBar = params.timeSigNumerator * (4 / params.timeSigDenominator);
+  const totalBeats = params.bars * beatsPerBar;
   const notes: Note[] = [];
   
   let sets = params.targetSets.length > 0
@@ -117,7 +122,7 @@ export function generateIv(params: IvEngineParams): Composition {
     }
     
     // Realize as notes (rhythm snapped to sixteenth-note grid)
-    const beatsForSet = snapDuration(Math.max(1, 4 / params.density));
+    const beatsForSet = snapDuration(Math.max(1, beatsPerBar / params.density));
     const slice = snapDuration(beatsForSet / Math.max(1, pcs.length));
     const effectiveTexture = params.texture ?? 'arpeggio';
     const isBlock = effectiveTexture === 'block' || (effectiveTexture === 'mixed' && currentSetIdx % 2 === 0);
@@ -163,7 +168,7 @@ export function generateIv(params: IvEngineParams): Composition {
   return {
     notes,
     tempoChanges: [{ beat: 0, bpm: params.tempo }],
-    timeSigChanges: [{ beat: 0, numerator: 4, denominator: 4 }],
+    timeSigChanges: [{ beat: 0, numerator: params.timeSigNumerator, denominator: params.timeSigDenominator }],
     voices: params.voices,
     mode: 'interval-vector',
     totalBeats,

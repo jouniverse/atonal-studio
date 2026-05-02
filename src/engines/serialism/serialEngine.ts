@@ -100,6 +100,8 @@ export interface SerialismParams {
   noteLengthBeats: number;
   walkForm: RowForm;
   walkTransposition: PitchClass;
+  timeSigNumerator: number;
+  timeSigDenominator: number;
 }
 
 export const DEFAULT_SERIALISM_PARAMS: SerialismParams = {
@@ -117,12 +119,15 @@ export const DEFAULT_SERIALISM_PARAMS: SerialismParams = {
   noteLengthBeats: 0.5,
   walkForm: 'P',
   walkTransposition: 0,
+  timeSigNumerator: 4,
+  timeSigDenominator: 4,
 };
 
 export function generateSerial(params: SerialismParams): Composition {
   const rng = createRng(params.seed);
   const matrix = buildMatrix(params.prime);
-  const totalBeats = params.bars * 4;
+  const beatsPerBar = params.timeSigNumerator * (4 / params.timeSigDenominator);
+  const totalBeats = params.bars * beatsPerBar;
   const notes: Note[] = [];
 
   let currentBeat = 0;
@@ -180,7 +185,7 @@ export function generateSerial(params: SerialismParams): Composition {
   return {
     notes,
     tempoChanges: [{ beat: 0, bpm: params.tempo }],
-    timeSigChanges: [{ beat: 0, numerator: 4, denominator: 4 }],
+    timeSigChanges: [{ beat: 0, numerator: params.timeSigNumerator, denominator: params.timeSigDenominator }],
     voices: 1,
     mode: 'serialism',
     totalBeats,

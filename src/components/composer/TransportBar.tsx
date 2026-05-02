@@ -136,7 +136,7 @@ export function TransportBar({ children, hideChainOnTouch }: { children?: ReactN
                 const v = Math.max(1, Math.min(16, Number(e.target.value) || 4));
                 setTimeSig(v, timeSigDenominator);
               }}
-              className="w-8 px-1 py-[2px] bg-[var(--surface-container-lowest)] border border-[var(--outline-variant)] rounded-[1px] font-[family-name:var(--font-space-grotesk)] text-[11px] text-[var(--on-surface)] text-center"
+              className="w-11 px-1 py-[2px] bg-[var(--surface-container-lowest)] border border-[var(--outline-variant)] rounded-[1px] font-[family-name:var(--font-space-grotesk)] text-[11px] text-[var(--on-surface)] text-center"
               aria-label="Time signature beats per bar"
             />
             <span className="text-[var(--on-surface-variant)] text-[10px]">/</span>

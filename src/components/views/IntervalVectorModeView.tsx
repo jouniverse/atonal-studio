@@ -297,7 +297,8 @@ export function IntervalVectorModeView() {
     } else {
       targetSets = setsForCardinality.slice(0, 4);
     }
-    const comp = generateIv({ ...params, targetSets, metric });
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
+    const comp = generateIv({ ...params, timeSigNumerator, timeSigDenominator, targetSets, metric });
     if (chain && composition) {
       appendComposition(comp);
     } else {
@@ -337,8 +338,9 @@ export function IntervalVectorModeView() {
 
   const handleInjectSequence = useCallback(() => {
     if (sequenceItems.length === 0) return;
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
     const comps = sequenceItems.map((item) =>
-      generateIv({ ...params, bars: seqBars, targetSets: [item.entry], texture: seqTexture, metric }),
+      generateIv({ ...params, bars: seqBars, timeSigNumerator, timeSigDenominator, targetSets: [item.entry], texture: seqTexture, metric }),
     );
     let offsetBeats = 0;
     const allNotes = comps.flatMap((comp) => {
@@ -346,7 +348,19 @@ export function IntervalVectorModeView() {
       offsetBeats += comp.totalBeats;
       return shifted;
     });
-    const combined = { ...comps[0], notes: allNotes, totalBeats: offsetBeats };
+    let timeSigOffset = 0;
+    const allTimeSigChanges = comps.flatMap((comp) => {
+      const shifted = comp.timeSigChanges.map((ts) => ({ ...ts, beat: ts.beat + timeSigOffset }));
+      timeSigOffset += comp.totalBeats;
+      return shifted;
+    });
+    let tempoOffset = 0;
+    const allTempoChanges = comps.flatMap((comp) => {
+      const shifted = comp.tempoChanges.map((tc) => ({ ...tc, beat: tc.beat + tempoOffset }));
+      tempoOffset += comp.totalBeats;
+      return shifted;
+    });
+    const combined = { ...comps[0], notes: allNotes, timeSigChanges: allTimeSigChanges, tempoChanges: allTempoChanges, totalBeats: offsetBeats };
     if (chain && composition) {
       appendComposition(combined);
     } else {

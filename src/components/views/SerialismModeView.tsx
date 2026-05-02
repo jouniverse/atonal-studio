@@ -186,8 +186,11 @@ export function SerialismModeView() {
   }, []);
 
   const handleCompose = useCallback(() => {
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
     const comp = generateSerial({
       ...params,
+      timeSigNumerator,
+      timeSigDenominator,
       walkForm: activeForm,
       walkTransposition: transposition as PitchClass,
     });

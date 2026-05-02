@@ -103,7 +103,8 @@ export function RandomModeView() {
   }, []);
 
   const handleGenerate = useCallback(() => {
-    const comp = generateRandom(params);
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
+    const comp = generateRandom({ ...params, timeSigNumerator, timeSigDenominator });
     if (chain && composition) {
       appendComposition(comp);
     } else {
@@ -115,7 +116,8 @@ export function RandomModeView() {
   const handleNewSeed = useCallback(() => {
     const newSeed = Date.now();
     setParams((prev) => ({ ...prev, seed: newSeed }));
-    const comp = generateRandom({ ...params, seed: newSeed });
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
+    const comp = generateRandom({ ...params, seed: newSeed, timeSigNumerator, timeSigDenominator });
     if (chain && composition) {
       appendComposition(comp);
     } else {

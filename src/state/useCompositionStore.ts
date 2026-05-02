@@ -23,10 +23,14 @@ export const useCompositionStore = create<CompositionState>((set, get) => ({
     }
     const offset = existing.totalBeats;
     const shiftedNotes = newComp.notes.map((n) => ({ ...n, startBeat: n.startBeat + offset }));
+    const shiftedTimeSigChanges = newComp.timeSigChanges.map((ts) => ({ ...ts, beat: ts.beat + offset }));
+    const shiftedTempoChanges = newComp.tempoChanges.map((tc) => ({ ...tc, beat: tc.beat + offset }));
     set({
       composition: {
         ...existing,
         notes: [...existing.notes, ...shiftedNotes],
+        tempoChanges: [...existing.tempoChanges, ...shiftedTempoChanges],
+        timeSigChanges: [...existing.timeSigChanges, ...shiftedTimeSigChanges],
         totalBeats: existing.totalBeats + newComp.totalBeats,
       },
     });
