@@ -1,0 +1,8758 @@
+{
+  "generatedAt": "2026-04-29T17:59:50.265Z",
+  "count": 352,
+  "sets": [
+    {
+      "forte": "0-1",
+      "primeForm": [],
+      "icv": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complement": "12-1",
+      "cardinality": 0,
+      "name": "Empty set"
+    },
+    {
+      "forte": "1-1",
+      "primeForm": [
+        0
+      ],
+      "icv": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complement": "11-1",
+      "cardinality": 1,
+      "name": "Unison, octave"
+    },
+    {
+      "forte": "2-1",
+      "primeForm": [
+        0,
+        1
+      ],
+      "icv": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complement": "10-1",
+      "cardinality": 2,
+      "carter": 1,
+      "name": "Minor second, major seventh"
+    },
+    {
+      "forte": "2-2",
+      "primeForm": [
+        0,
+        2
+      ],
+      "icv": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complement": "10-2",
+      "cardinality": 2,
+      "carter": 2,
+      "name": "Major second, minor seventh"
+    },
+    {
+      "forte": "2-3",
+      "primeForm": [
+        0,
+        3
+      ],
+      "icv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "complement": "10-3",
+      "cardinality": 2,
+      "carter": 3,
+      "name": "Minor third, major sixth"
+    },
+    {
+      "forte": "2-4",
+      "primeForm": [
+        0,
+        4
+      ],
+      "icv": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "complement": "10-4",
+      "cardinality": 2,
+      "carter": 4,
+      "name": "Major third, minor sixth"
+    },
+    {
+      "forte": "2-5",
+      "primeForm": [
+        0,
+        5
+      ],
+      "icv": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "complement": "10-5",
+      "cardinality": 2,
+      "carter": 5,
+      "name": "Perfect fourth, perfect fifth"
+    },
+    {
+      "forte": "2-6",
+      "primeForm": [
+        0,
+        6
+      ],
+      "icv": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "complement": "10-6",
+      "cardinality": 2,
+      "carter": 6,
+      "name": "Augmented fourth, diminished fifth, tritone"
+    },
+    {
+      "forte": "3-1",
+      "primeForm": [
+        0,
+        1,
+        2
+      ],
+      "icv": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complement": "9-1",
+      "cardinality": 3,
+      "carter": 4,
+      "name": "Chromatic trichord"
+    },
+    {
+      "forte": "3-2A",
+      "primeForm": [
+        0,
+        1,
+        3
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "complement": "9-2B",
+      "cardinality": 3,
+      "carter": 12
+    },
+    {
+      "forte": "3-2B",
+      "primeForm": [
+        0,
+        1,
+        3
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "complement": "9-2A",
+      "cardinality": 3,
+      "carter": 12,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "forte": "3-3A",
+      "primeForm": [
+        0,
+        1,
+        4
+      ],
+      "icv": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "complement": "9-3B",
+      "cardinality": 3,
+      "carter": 11
+    },
+    {
+      "forte": "3-3B",
+      "primeForm": [
+        0,
+        1,
+        4
+      ],
+      "icv": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "complement": "9-3A",
+      "cardinality": 3,
+      "carter": 11,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "forte": "3-4A",
+      "primeForm": [
+        0,
+        1,
+        5
+      ],
+      "icv": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "complement": "9-4B",
+      "cardinality": 3,
+      "carter": 9
+    },
+    {
+      "forte": "3-4B",
+      "primeForm": [
+        0,
+        1,
+        5
+      ],
+      "icv": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "complement": "9-4A",
+      "cardinality": 3,
+      "carter": 9,
+      "forteAltPrimeForm": [
+        0,
+        4,
+        5
+      ]
+    },
+    {
+      "forte": "3-5A",
+      "primeForm": [
+        0,
+        1,
+        6
+      ],
+      "icv": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "complement": "9-5B",
+      "cardinality": 3,
+      "carter": 7,
+      "name": "Viennese trichord"
+    },
+    {
+      "forte": "3-5B",
+      "primeForm": [
+        0,
+        1,
+        6
+      ],
+      "icv": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "complement": "9-5A",
+      "cardinality": 3,
+      "carter": 7,
+      "name": "Viennese trichord",
+      "forteAltPrimeForm": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "3-6",
+      "primeForm": [
+        0,
+        2,
+        4
+      ],
+      "icv": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "complement": "9-6",
+      "cardinality": 3,
+      "carter": 3
+    },
+    {
+      "forte": "3-7A",
+      "primeForm": [
+        0,
+        2,
+        5
+      ],
+      "icv": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "complement": "9-7B",
+      "cardinality": 3,
+      "carter": 10
+    },
+    {
+      "forte": "3-7B",
+      "primeForm": [
+        0,
+        2,
+        5
+      ],
+      "icv": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "complement": "9-7A",
+      "cardinality": 3,
+      "carter": 10,
+      "name": "Blues trichord (minor pentatonic subset)",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "forte": "3-8A",
+      "primeForm": [
+        0,
+        2,
+        6
+      ],
+      "icv": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "complement": "9-8B",
+      "cardinality": 3,
+      "carter": 8,
+      "name": "Italian sixth chord"
+    },
+    {
+      "forte": "3-8B",
+      "primeForm": [
+        0,
+        2,
+        6
+      ],
+      "icv": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "complement": "9-8A",
+      "cardinality": 3,
+      "carter": 8,
+      "forteAltPrimeForm": [
+        0,
+        4,
+        6
+      ]
+    },
+    {
+      "forte": "3-9",
+      "primeForm": [
+        0,
+        2,
+        7
+      ],
+      "icv": [
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "complement": "9-9",
+      "cardinality": 3,
+      "carter": 5,
+      "name": "Suspended chord"
+    },
+    {
+      "forte": "3-10",
+      "primeForm": [
+        0,
+        3,
+        6
+      ],
+      "icv": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "complement": "9-10",
+      "cardinality": 3,
+      "carter": 2,
+      "name": "Diminished chord"
+    },
+    {
+      "forte": "3-11A",
+      "primeForm": [
+        0,
+        3,
+        7
+      ],
+      "icv": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "9-11B",
+      "cardinality": 3,
+      "carter": 6,
+      "name": "Minor chord, Neapolitan chord"
+    },
+    {
+      "forte": "3-11B",
+      "primeForm": [
+        0,
+        3,
+        7
+      ],
+      "icv": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "9-11A",
+      "cardinality": 3,
+      "carter": 6,
+      "name": "Major chord",
+      "forteAltPrimeForm": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "forte": "3-12",
+      "primeForm": [
+        0,
+        4,
+        8
+      ],
+      "icv": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "complement": "9-12",
+      "cardinality": 3,
+      "carter": 1,
+      "name": "Augmented chord"
+    },
+    {
+      "forte": "4-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "icv": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "complement": "8-1",
+      "cardinality": 4,
+      "carter": 1,
+      "name": "BACH motif"
+    },
+    {
+      "forte": "4-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "complement": "8-2B",
+      "cardinality": 4,
+      "carter": 17
+    },
+    {
+      "forte": "4-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "complement": "8-2A",
+      "cardinality": 4,
+      "carter": 17,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "forte": "4-3",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "complement": "8-3",
+      "cardinality": 4,
+      "carter": 9,
+      "name": "DSCH motif"
+    },
+    {
+      "forte": "4-4A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "icv": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "8-4B",
+      "cardinality": 4,
+      "carter": 20
+    },
+    {
+      "forte": "4-4B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "icv": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "8-4A",
+      "cardinality": 4,
+      "carter": 20,
+      "name": "Chromatic tetrachord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "forte": "4-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "icv": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-5B",
+      "cardinality": 4,
+      "carter": 22
+    },
+    {
+      "forte": "4-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "icv": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-5A",
+      "cardinality": 4,
+      "carter": 22,
+      "forteAltPrimeForm": [
+        0,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "4-6",
+      "primeForm": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "complement": "8-6",
+      "cardinality": 4,
+      "carter": 6,
+      "name": "Dream chord"
+    },
+    {
+      "forte": "4-7",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "icv": [
+        2,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "complement": "8-7",
+      "cardinality": 4,
+      "carter": 8,
+      "name": "Hijaz tetrachord"
+    },
+    {
+      "forte": "4-8",
+      "primeForm": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "icv": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "complement": "8-8",
+      "cardinality": 4,
+      "carter": 10
+    },
+    {
+      "forte": "4-9",
+      "primeForm": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "icv": [
+        2,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "complement": "8-9",
+      "cardinality": 4,
+      "carter": 2,
+      "name": "Distance model, Pajara tetratonic"
+    },
+    {
+      "forte": "4-10",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "complement": "8-10",
+      "cardinality": 4,
+      "carter": 3,
+      "name": "Nahawand tetrachord"
+    },
+    {
+      "forte": "4-11A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "icv": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "8-11B",
+      "cardinality": 4,
+      "carter": 26,
+      "name": "Kurd tetrachord"
+    },
+    {
+      "forte": "4-11B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "icv": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "complement": "8-11A",
+      "cardinality": 4,
+      "carter": 26,
+      "name": "Diatonic tetrachord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "forte": "4-12A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "complement": "8-12A",
+      "cardinality": 4,
+      "carter": 28
+    },
+    {
+      "forte": "4-12B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "complement": "8-12B",
+      "cardinality": 4,
+      "carter": 28,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "forte": "4-13A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "complement": "8-13B",
+      "cardinality": 4,
+      "carter": 7
+    },
+    {
+      "forte": "4-13B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "complement": "8-13A",
+      "cardinality": 4,
+      "carter": 7,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "4-14A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "complement": "8-14A",
+      "cardinality": 4,
+      "carter": 25,
+      "name": "Minor add 9 chord"
+    },
+    {
+      "forte": "4-14B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "complement": "8-14B",
+      "cardinality": 4,
+      "carter": 25,
+      "name": "Major add 4 chord",
+      "forteAltPrimeForm": [
+        0,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "forte": "4-Z15A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-Z15B",
+      "cardinality": 4,
+      "carter": 18,
+      "name": "All-interval tetrachord"
+    },
+    {
+      "forte": "4-Z15B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-Z15A",
+      "cardinality": 4,
+      "carter": 18,
+      "name": "All-interval tetrachord, Hendrix chord (7 #9)",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "4-16A",
+      "primeForm": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "complement": "8-16B",
+      "cardinality": 4,
+      "carter": 19,
+      "name": "Major seventh flat five chord"
+    },
+    {
+      "forte": "4-16B",
+      "primeForm": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "complement": "8-16A",
+      "cardinality": 4,
+      "carter": 19,
+      "name": "Sus 4 major 7",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "4-17",
+      "primeForm": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "complement": "8-17",
+      "cardinality": 4,
+      "carter": 13,
+      "name": "Alpha chord"
+    },
+    {
+      "forte": "4-18A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "icv": [
+        1,
+        0,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-18B",
+      "cardinality": 4,
+      "carter": 21,
+      "name": "Diminished major seventh chord"
+    },
+    {
+      "forte": "4-18B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "icv": [
+        1,
+        0,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-18A",
+      "cardinality": 4,
+      "carter": 21,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "4-19A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "icv": [
+        1,
+        0,
+        1,
+        3,
+        1,
+        0
+      ],
+      "complement": "8-19B",
+      "cardinality": 4,
+      "carter": 24,
+      "name": "Minor major seventh chord"
+    },
+    {
+      "forte": "4-19B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        8
+      ],
+      "icv": [
+        1,
+        0,
+        1,
+        3,
+        1,
+        0
+      ],
+      "complement": "8-19A",
+      "cardinality": 4,
+      "carter": 24,
+      "name": "Augmented major seventh chord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "forte": "4-20",
+      "primeForm": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "complement": "8-20",
+      "cardinality": 4,
+      "carter": 15,
+      "name": "Major seventh chord, minor flat sixth chord"
+    },
+    {
+      "forte": "4-21",
+      "primeForm": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "icv": [
+        0,
+        3,
+        0,
+        2,
+        0,
+        1
+      ],
+      "complement": "8-21",
+      "cardinality": 4,
+      "carter": 11
+    },
+    {
+      "forte": "4-22A",
+      "primeForm": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "icv": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "complement": "8-22B",
+      "cardinality": 4,
+      "carter": 27,
+      "name": "Mu chord"
+    },
+    {
+      "forte": "4-22B",
+      "primeForm": [
+        0,
+        2,
+        4,
+        7
+      ],
+      "icv": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "complement": "8-22A",
+      "cardinality": 4,
+      "carter": 27,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "forte": "4-23",
+      "primeForm": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "icv": [
+        0,
+        2,
+        1,
+        0,
+        3,
+        0
+      ],
+      "complement": "8-23",
+      "cardinality": 4,
+      "carter": 4,
+      "name": "Quartal chord, seventh suspension four chord[9]"
+    },
+    {
+      "forte": "4-24",
+      "primeForm": [
+        0,
+        2,
+        4,
+        8
+      ],
+      "icv": [
+        0,
+        2,
+        0,
+        3,
+        0,
+        1
+      ],
+      "complement": "8-24",
+      "cardinality": 4,
+      "carter": 16,
+      "name": "Augmented seventh chord"
+    },
+    {
+      "forte": "4-25",
+      "primeForm": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "icv": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "complement": "8-25",
+      "cardinality": 4,
+      "carter": 12,
+      "name": "Dominant seventh flat five chord, French sixth chord"
+    },
+    {
+      "forte": "4-26",
+      "primeForm": [
+        0,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        0,
+        1,
+        2,
+        1,
+        2,
+        0
+      ],
+      "complement": "8-26",
+      "cardinality": 4,
+      "carter": 14,
+      "name": "Minor seventh chord"
+    },
+    {
+      "forte": "4-27A",
+      "primeForm": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "icv": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-27B",
+      "cardinality": 4,
+      "carter": 29,
+      "name": "Half-diminished seventh chord, minor sixth chord, Tristan chord"
+    },
+    {
+      "forte": "4-27B",
+      "primeForm": [
+        0,
+        2,
+        5,
+        8
+      ],
+      "icv": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-27A",
+      "cardinality": 4,
+      "carter": 29,
+      "name": "Dominant seventh chord, German sixth chord, harmonic seventh chord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "4-28",
+      "primeForm": [
+        0,
+        3,
+        6,
+        9
+      ],
+      "icv": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        2
+      ],
+      "complement": "8-28",
+      "cardinality": 4,
+      "carter": 5,
+      "name": "Diminished seventh chord"
+    },
+    {
+      "forte": "4-Z29A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-Z29B",
+      "cardinality": 4,
+      "carter": 23,
+      "name": "All-interval tetrachord, dominant thirteenth chord"
+    },
+    {
+      "forte": "4-Z29B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "icv": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "complement": "8-Z29A",
+      "cardinality": 4,
+      "carter": 23,
+      "name": "All-interval tetrachord",
+      "forteAltPrimeForm": [
+        0,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "icv": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "complement": "7-1",
+      "cardinality": 5,
+      "name": "Chromatic pentachord"
+    },
+    {
+      "forte": "5-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "complement": "7-2B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "complement": "7-2A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "forte": "5-3A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "complement": "7-3B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-3B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "complement": "7-3A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "forte": "5-4A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "7-4B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-4B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "complement": "7-4A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "5-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ],
+      "icv": [
+        3,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-5B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ],
+      "icv": [
+        3,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-5A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-6A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "icv": [
+        3,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-6B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-6B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "icv": [
+        3,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-6A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "5-7A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "icv": [
+        3,
+        1,
+        0,
+        1,
+        3,
+        2
+      ],
+      "complement": "7-7B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-7B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "icv": [
+        3,
+        1,
+        0,
+        1,
+        3,
+        2
+      ],
+      "complement": "7-7A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-8",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "icv": [
+        2,
+        3,
+        2,
+        2,
+        0,
+        1
+      ],
+      "complement": "7-8",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-9A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "icv": [
+        2,
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "complement": "7-9B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-9B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "icv": [
+        2,
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "complement": "7-9A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "5-10A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "icv": [
+        2,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "complement": "7-10B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-10B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "icv": [
+        2,
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "complement": "7-10A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "5-11A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "complement": "7-11A",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-11B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "complement": "7-11B",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "forte": "5-Z12",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6
+      ],
+      "icv": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-Z12",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-13A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        1
+      ],
+      "complement": "7-13B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-13B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        1
+      ],
+      "complement": "7-13A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "forte": "5-14A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "complement": "7-14B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-14B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "complement": "7-14A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-15",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "complement": "7-15",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-16A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "complement": "7-16B",
+      "cardinality": 5,
+      "name": "Dominant 13 b9 chord"
+    },
+    {
+      "forte": "5-16B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "complement": "7-16A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-Z17",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        3,
+        2,
+        0
+      ],
+      "complement": "7-Z17",
+      "cardinality": 5,
+      "name": "Farben chord, minor major ninth chord"
+    },
+    {
+      "forte": "5-Z18A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-Z18B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-Z18B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-Z18A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-19A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "complement": "7-19B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-19B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        7
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "complement": "7-19A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-20A",
+      "primeForm": [
+        0,
+        1,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "complement": "7-20B",
+      "cardinality": 5,
+      "name": "Ryukyu  scale"
+    },
+    {
+      "forte": "5-20B",
+      "primeForm": [
+        0,
+        1,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "complement": "7-20A",
+      "cardinality": 5,
+      "name": "Hirajōshi scale, in scale, iwato scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "5-21A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        2,
+        0,
+        2,
+        4,
+        2,
+        0
+      ],
+      "complement": "7-21B",
+      "cardinality": 5,
+      "name": "Hexatonic pentachord"
+    },
+    {
+      "forte": "5-21B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        2,
+        0,
+        2,
+        4,
+        2,
+        0
+      ],
+      "complement": "7-21A",
+      "cardinality": 5,
+      "name": "Hexatonic pentachord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "5-22",
+      "primeForm": [
+        0,
+        1,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        2,
+        0,
+        2,
+        3,
+        2,
+        1
+      ],
+      "complement": "7-22",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-23A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        3,
+        2,
+        1,
+        3,
+        0
+      ],
+      "complement": "7-23B",
+      "cardinality": 5,
+      "name": "Aeolian pentachord"
+    },
+    {
+      "forte": "5-23B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        3,
+        2,
+        1,
+        3,
+        0
+      ],
+      "complement": "7-23A",
+      "cardinality": 5,
+      "name": "Ionian pentachord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "forte": "5-24A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-24B",
+      "cardinality": 5,
+      "name": "Phrygian pentachord, dominant ninth add 13 chord"
+    },
+    {
+      "forte": "5-24B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-24A",
+      "cardinality": 5,
+      "name": "Lydian pentachord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-25A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-25B",
+      "cardinality": 5,
+      "name": "Half-diminished minor ninth chord"
+    },
+    {
+      "forte": "5-25B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-25A",
+      "cardinality": 5,
+      "name": "Seven six chord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "5-26A",
+      "primeForm": [
+        0,
+        2,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        3,
+        1,
+        1
+      ],
+      "complement": "7-26A",
+      "cardinality": 5,
+      "name": "Half-diminished ninth chord"
+    },
+    {
+      "forte": "5-26B",
+      "primeForm": [
+        0,
+        2,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        3,
+        1,
+        1
+      ],
+      "complement": "7-26B",
+      "cardinality": 5,
+      "name": "Augmented major ninth chord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "5-27A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        0
+      ],
+      "complement": "7-27B",
+      "cardinality": 5,
+      "name": "Major ninth chord"
+    },
+    {
+      "forte": "5-27B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        2,
+        3,
+        0
+      ],
+      "complement": "7-27A",
+      "cardinality": 5,
+      "name": "Minor ninth chord",
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "5-28A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "complement": "7-28A",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-28B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "complement": "7-28B",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "5-29A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "complement": "7-29B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-29B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "complement": "7-29A",
+      "cardinality": 5,
+      "name": "Insen scale, minor sixth ninth chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "5-30A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "complement": "7-30B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-30B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "complement": "7-30A",
+      "cardinality": 5,
+      "name": "Jazz sus chord, Lydian augmented chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "5-31A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        9
+      ],
+      "icv": [
+        1,
+        1,
+        4,
+        1,
+        1,
+        2
+      ],
+      "complement": "7-31B",
+      "cardinality": 5,
+      "name": "Beta chord, diminished minor ninth chord"
+    },
+    {
+      "forte": "5-31B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        9
+      ],
+      "icv": [
+        1,
+        1,
+        4,
+        1,
+        1,
+        2
+      ],
+      "complement": "7-31A",
+      "cardinality": 5,
+      "name": "Diminished ninth chord, dominant minor ninth chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "5-32A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        1,
+        1,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-32B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-32B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        1,
+        1,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-32A",
+      "cardinality": 5,
+      "name": "Elektra chord, gamma chord, Dominant seventh sharp ninth chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "5-33",
+      "primeForm": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        0,
+        4,
+        0,
+        4,
+        0,
+        2
+      ],
+      "complement": "7-33",
+      "cardinality": 5,
+      "name": "Augmented dominant ninth chord, ninth augmented fifth chord, ninth flat fifth chord"
+    },
+    {
+      "forte": "5-34",
+      "primeForm": [
+        0,
+        2,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        0,
+        3,
+        2,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-34",
+      "cardinality": 5,
+      "name": "Dominant ninth chord"
+    },
+    {
+      "forte": "5-35",
+      "primeForm": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "icv": [
+        0,
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      "complement": "7-35",
+      "cardinality": 5,
+      "name": "Major pentatonic scale"
+    },
+    {
+      "forte": "5-Z36A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-Z36B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-Z36B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "icv": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "complement": "7-Z36A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "5-Z37",
+      "primeForm": [
+        0,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        3,
+        2,
+        0
+      ],
+      "complement": "7-Z37",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-Z38A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-Z38B",
+      "cardinality": 5
+    },
+    {
+      "forte": "5-Z38B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        8
+      ],
+      "icv": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "complement": "7-Z38A",
+      "cardinality": 5,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "icv": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "complement": "6-1",
+      "cardinality": 6,
+      "carter": 4,
+      "name": "Chromatic hexachord"
+    },
+    {
+      "forte": "6-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "complement": "6-2B",
+      "cardinality": 6,
+      "carter": 19
+    },
+    {
+      "forte": "6-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "complement": "6-2A",
+      "cardinality": 6,
+      "carter": 19,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "6-Z3A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "6-Z36B",
+      "cardinality": 6,
+      "carter": 49
+    },
+    {
+      "forte": "6-Z3B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "6-Z36A",
+      "cardinality": 6,
+      "carter": 49,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "forte": "6-Z4",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "icv": [
+        4,
+        3,
+        2,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z37",
+      "cardinality": 6,
+      "carter": 24
+    },
+    {
+      "forte": "6-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "icv": [
+        4,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-5B",
+      "cardinality": 6,
+      "carter": 16
+    },
+    {
+      "forte": "6-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "icv": [
+        4,
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-5A",
+      "cardinality": 6,
+      "carter": 16,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z6",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "icv": [
+        4,
+        2,
+        1,
+        2,
+        4,
+        2
+      ],
+      "complement": "6-Z38",
+      "cardinality": 6,
+      "carter": 33
+    },
+    {
+      "forte": "6-7",
+      "primeForm": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        2,
+        0,
+        2,
+        4,
+        3
+      ],
+      "complement": "6-7",
+      "cardinality": 6,
+      "carter": 7,
+      "name": "Two-semitone tritone scale; Messiaen mode"
+    },
+    {
+      "forte": "6-8",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        4,
+        3,
+        2,
+        3,
+        0
+      ],
+      "complement": "6-8",
+      "cardinality": 6,
+      "carter": 5
+    },
+    {
+      "forte": "6-9A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        4,
+        2,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-9B",
+      "cardinality": 6,
+      "carter": 20
+    },
+    {
+      "forte": "6-9B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        4,
+        2,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-9A",
+      "cardinality": 6,
+      "carter": 20,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z10A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z39A",
+      "cardinality": 6,
+      "carter": 42
+    },
+    {
+      "forte": "6-Z10B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z39B",
+      "cardinality": 6,
+      "carter": 42,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z11A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-Z40B",
+      "cardinality": 6,
+      "carter": 47
+    },
+    {
+      "forte": "6-Z11B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-Z40A",
+      "cardinality": 6,
+      "carter": 47,
+      "name": "Sacher hexachord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z12A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z41B",
+      "cardinality": 6,
+      "carter": 46
+    },
+    {
+      "forte": "6-Z12B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z41A",
+      "cardinality": 6,
+      "carter": 46,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z13",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "icv": [
+        3,
+        2,
+        4,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-Z42",
+      "cardinality": 6,
+      "carter": 29,
+      "name": "Istrian scale"
+    },
+    {
+      "forte": "6-14A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        3,
+        4,
+        3,
+        0
+      ],
+      "complement": "6-14A",
+      "cardinality": 6,
+      "carter": 3
+    },
+    {
+      "forte": "6-14B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        3,
+        4,
+        3,
+        0
+      ],
+      "complement": "6-14B",
+      "cardinality": 6,
+      "carter": 3,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-15A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        3,
+        4,
+        2,
+        1
+      ],
+      "complement": "6-15B",
+      "cardinality": 6,
+      "carter": 13
+    },
+    {
+      "forte": "6-15B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        3,
+        4,
+        2,
+        1
+      ],
+      "complement": "6-15A",
+      "cardinality": 6,
+      "carter": 13,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-16A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-16B",
+      "cardinality": 6,
+      "carter": 11
+    },
+    {
+      "forte": "6-16B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-16A",
+      "cardinality": 6,
+      "carter": 11,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z17A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "complement": "6-Z43B",
+      "cardinality": 6,
+      "carter": 35,
+      "name": "All-trichord hexachord"
+    },
+    {
+      "forte": "6-Z17B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "complement": "6-Z43A",
+      "cardinality": 6,
+      "carter": 35,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-18A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "complement": "6-18B",
+      "cardinality": 6,
+      "carter": 17
+    },
+    {
+      "forte": "6-18B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "complement": "6-18A",
+      "cardinality": 6,
+      "carter": 17,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z19A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-Z44B",
+      "cardinality": 6,
+      "carter": 37
+    },
+    {
+      "forte": "6-Z19B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        3,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-Z44A",
+      "cardinality": 6,
+      "carter": 37,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-20",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "icv": [
+        3,
+        0,
+        3,
+        6,
+        3,
+        0
+      ],
+      "complement": "6-20",
+      "cardinality": 6,
+      "carter": 2,
+      "name": "Hexatonic mode, \"Ode-to-Napoleon\" hexachord"
+    },
+    {
+      "forte": "6-21A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        4,
+        2,
+        4,
+        1,
+        2
+      ],
+      "complement": "6-21B",
+      "cardinality": 6,
+      "carter": 12
+    },
+    {
+      "forte": "6-21B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        4,
+        2,
+        4,
+        1,
+        2
+      ],
+      "complement": "6-21A",
+      "cardinality": 6,
+      "carter": 12,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "6-22A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        4,
+        1,
+        4,
+        2,
+        2
+      ],
+      "complement": "6-22B",
+      "cardinality": 6,
+      "carter": 10
+    },
+    {
+      "forte": "6-22B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        4,
+        1,
+        4,
+        2,
+        2
+      ],
+      "complement": "6-22A",
+      "cardinality": 6,
+      "carter": 10,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z23",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        4,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-Z45",
+      "cardinality": 6,
+      "carter": 27
+    },
+    {
+      "forte": "6-Z24A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "complement": "6-Z46B",
+      "cardinality": 6,
+      "carter": 39,
+      "name": "Minor major eleventh chord"
+    },
+    {
+      "forte": "6-Z24B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "complement": "6-Z46A",
+      "cardinality": 6,
+      "carter": 39,
+      "name": "Half-diminished eleventh chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z25A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-Z47B",
+      "cardinality": 6,
+      "carter": 43,
+      "name": "Major eleventh chord"
+    },
+    {
+      "forte": "6-Z25B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-Z47A",
+      "cardinality": 6,
+      "carter": 43,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z26",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        2,
+        3,
+        2,
+        3,
+        4,
+        1
+      ],
+      "complement": "6-Z48",
+      "cardinality": 6,
+      "carter": 26,
+      "name": "Major ninth sharp eleventh chord"
+    },
+    {
+      "forte": "6-27A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        5,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-27B",
+      "cardinality": 6,
+      "carter": 14
+    },
+    {
+      "forte": "6-27B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        5,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-27A",
+      "cardinality": 6,
+      "carter": 14,
+      "name": "Diminished eleventh chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "6-Z28",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        3,
+        2,
+        2
+      ],
+      "complement": "6-Z49",
+      "cardinality": 6,
+      "carter": 21,
+      "name": "Augmented major eleventh chord"
+    },
+    {
+      "forte": "6-Z29",
+      "primeForm": [
+        0,
+        2,
+        3,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z50",
+      "cardinality": 6,
+      "carter": 32,
+      "name": "Bridge chord"
+    },
+    {
+      "forte": "6-30A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        3
+      ],
+      "complement": "6-30B",
+      "cardinality": 6,
+      "carter": 15
+    },
+    {
+      "forte": "6-30B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        3
+      ],
+      "complement": "6-30A",
+      "cardinality": 6,
+      "carter": 15,
+      "name": "Petrushka chord, tritone scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "6-31A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-31B",
+      "cardinality": 6,
+      "carter": 8
+    },
+    {
+      "forte": "6-31B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-31A",
+      "cardinality": 6,
+      "carter": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "6-32",
+      "primeForm": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        1,
+        4,
+        3,
+        2,
+        5,
+        0
+      ],
+      "complement": "6-32",
+      "cardinality": 6,
+      "carter": 6,
+      "name": "Diatonic hexachord, minor eleventh chord"
+    },
+    {
+      "forte": "6-33A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        1,
+        4,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-33B",
+      "cardinality": 6,
+      "carter": 18,
+      "name": "Dominant 9 add 13"
+    },
+    {
+      "forte": "6-33B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        1,
+        4,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-33A",
+      "cardinality": 6,
+      "carter": 18,
+      "name": "Dominant eleventh chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "forte": "6-34A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        1,
+        4,
+        2,
+        4,
+        2,
+        2
+      ],
+      "complement": "6-34B",
+      "cardinality": 6,
+      "carter": 9,
+      "name": "Mystic chord"
+    },
+    {
+      "forte": "6-34B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        1,
+        4,
+        2,
+        4,
+        2,
+        2
+      ],
+      "complement": "6-34A",
+      "cardinality": 6,
+      "carter": 9,
+      "name": "Augmented eleventh chord, dominant sharp eleventh chord, Prélude chord",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "6-35",
+      "primeForm": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        0,
+        6,
+        0,
+        6,
+        0,
+        3
+      ],
+      "complement": "6-35",
+      "cardinality": 6,
+      "carter": 1,
+      "name": "Whole tone scale"
+    },
+    {
+      "forte": "6-Z36A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "6-Z3B",
+      "cardinality": 6,
+      "carter": 50
+    },
+    {
+      "forte": "6-Z36B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "complement": "6-Z3A",
+      "cardinality": 6,
+      "carter": 50,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "6-Z37",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "icv": [
+        4,
+        3,
+        2,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z4",
+      "cardinality": 6,
+      "carter": 23
+    },
+    {
+      "forte": "6-Z38",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        2,
+        1,
+        2,
+        4,
+        2
+      ],
+      "complement": "6-Z6",
+      "cardinality": 6,
+      "carter": 34
+    },
+    {
+      "forte": "6-Z39A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z10A",
+      "cardinality": 6,
+      "carter": 41
+    },
+    {
+      "forte": "6-Z39B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "complement": "6-Z10B",
+      "cardinality": 6,
+      "carter": 41,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z40A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-Z11B",
+      "cardinality": 6,
+      "carter": 48
+    },
+    {
+      "forte": "6-Z40B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "complement": "6-Z11A",
+      "cardinality": 6,
+      "carter": 48,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z41A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z12B",
+      "cardinality": 6,
+      "carter": 45
+    },
+    {
+      "forte": "6-Z41B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z12A",
+      "cardinality": 6,
+      "carter": 45,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z42",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "icv": [
+        3,
+        2,
+        4,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-Z13",
+      "cardinality": 6,
+      "carter": 30
+    },
+    {
+      "forte": "6-Z43A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "complement": "6-Z17B",
+      "cardinality": 6,
+      "carter": 36
+    },
+    {
+      "forte": "6-Z43B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "complement": "6-Z17A",
+      "cardinality": 6,
+      "carter": 36,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "6-Z44A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        3,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-Z19B",
+      "cardinality": 6,
+      "carter": 38,
+      "name": "Schoenberg hexachord; Enigma chord"
+    },
+    {
+      "forte": "6-Z44B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        3,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "complement": "6-Z19A",
+      "cardinality": 6,
+      "carter": 38,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "6-Z45",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        4,
+        2,
+        2,
+        2
+      ],
+      "complement": "6-Z23",
+      "cardinality": 6,
+      "carter": 28
+    },
+    {
+      "forte": "6-Z46A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "complement": "6-Z24B",
+      "cardinality": 6,
+      "carter": 40,
+      "name": "Scale of harmonics"
+    },
+    {
+      "forte": "6-Z46B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "complement": "6-Z24A",
+      "cardinality": 6,
+      "carter": 40,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "6-Z47A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-Z25B",
+      "cardinality": 6,
+      "carter": 44
+    },
+    {
+      "forte": "6-Z47B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        3,
+        2,
+        4,
+        1
+      ],
+      "complement": "6-Z25A",
+      "cardinality": 6,
+      "carter": 44,
+      "name": "Blues scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        9
+      ]
+    },
+    {
+      "forte": "6-Z48",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        3,
+        2,
+        3,
+        4,
+        1
+      ],
+      "complement": "6-Z26",
+      "cardinality": 6,
+      "carter": 25
+    },
+    {
+      "forte": "6-Z49",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        3,
+        2,
+        2
+      ],
+      "complement": "6-Z28",
+      "cardinality": 6,
+      "carter": 22,
+      "name": "Octatonic hexachord"
+    },
+    {
+      "forte": "6-Z50",
+      "primeForm": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        2,
+        2,
+        4,
+        2,
+        3,
+        2
+      ],
+      "complement": "6-Z29",
+      "cardinality": 6,
+      "carter": 31
+    },
+    {
+      "forte": "7-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "icv": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "complement": "5-1",
+      "cardinality": 7,
+      "carter": 1,
+      "name": "Chromatic heptachord"
+    },
+    {
+      "forte": "7-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        5,
+        5,
+        4,
+        3,
+        3,
+        1
+      ],
+      "complement": "5-2B",
+      "cardinality": 7,
+      "carter": 11
+    },
+    {
+      "forte": "7-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "icv": [
+        5,
+        5,
+        4,
+        3,
+        3,
+        1
+      ],
+      "complement": "5-2A",
+      "cardinality": 7,
+      "carter": 11,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "7-3A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        5,
+        4,
+        4,
+        4,
+        3,
+        1
+      ],
+      "complement": "5-3B",
+      "cardinality": 7,
+      "carter": 14
+    },
+    {
+      "forte": "7-3B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "icv": [
+        5,
+        4,
+        4,
+        4,
+        3,
+        1
+      ],
+      "complement": "5-3A",
+      "cardinality": 7,
+      "carter": 14,
+      "forteAltPrimeForm": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-4A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "icv": [
+        5,
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "complement": "5-4B",
+      "cardinality": 7,
+      "carter": 12
+    },
+    {
+      "forte": "7-4B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "icv": [
+        5,
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "complement": "5-4A",
+      "cardinality": 7,
+      "carter": 12,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "7-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "icv": [
+        5,
+        4,
+        3,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-5B",
+      "cardinality": 7,
+      "carter": 13
+    },
+    {
+      "forte": "7-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "icv": [
+        5,
+        4,
+        3,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-5A",
+      "cardinality": 7,
+      "carter": 13,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "forte": "7-6A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        5,
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-6B",
+      "cardinality": 7,
+      "carter": 27
+    },
+    {
+      "forte": "7-6B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "icv": [
+        5,
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-6A",
+      "cardinality": 7,
+      "carter": 27,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-7A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        5,
+        3,
+        2,
+        3,
+        5,
+        3
+      ],
+      "complement": "5-7B",
+      "cardinality": 7,
+      "carter": 30
+    },
+    {
+      "forte": "7-7B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        5,
+        3,
+        2,
+        3,
+        5,
+        3
+      ],
+      "complement": "5-7A",
+      "cardinality": 7,
+      "carter": 30,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-8",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        5,
+        4,
+        4,
+        2,
+        2
+      ],
+      "complement": "5-8",
+      "cardinality": 7,
+      "carter": 2
+    },
+    {
+      "forte": "7-9A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        5,
+        3,
+        4,
+        3,
+        2
+      ],
+      "complement": "5-9B",
+      "cardinality": 7,
+      "carter": 15
+    },
+    {
+      "forte": "7-9B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        5,
+        3,
+        4,
+        3,
+        2
+      ],
+      "complement": "5-9A",
+      "cardinality": 7,
+      "carter": 15,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-10A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        4,
+        4,
+        5,
+        3,
+        3,
+        2
+      ],
+      "complement": "5-10B",
+      "cardinality": 7,
+      "carter": 19
+    },
+    {
+      "forte": "7-10B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "icv": [
+        4,
+        4,
+        5,
+        3,
+        3,
+        2
+      ],
+      "complement": "5-10A",
+      "cardinality": 7,
+      "carter": 19,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "7-11A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        1
+      ],
+      "complement": "5-11A",
+      "cardinality": 7,
+      "carter": 18
+    },
+    {
+      "forte": "7-11B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        1
+      ],
+      "complement": "5-11B",
+      "cardinality": 7,
+      "carter": 18,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-Z12",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-Z12",
+      "cardinality": 7,
+      "carter": 5
+    },
+    {
+      "forte": "7-13A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        5,
+        3,
+        2
+      ],
+      "complement": "5-13B",
+      "cardinality": 7,
+      "carter": 17
+    },
+    {
+      "forte": "7-13B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        5,
+        3,
+        2
+      ],
+      "complement": "5-13A",
+      "cardinality": 7,
+      "carter": 17,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-14A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        3,
+        5,
+        2
+      ],
+      "complement": "5-14B",
+      "cardinality": 7,
+      "carter": 28
+    },
+    {
+      "forte": "7-14B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        3,
+        3,
+        5,
+        2
+      ],
+      "complement": "5-14A",
+      "cardinality": 7,
+      "carter": 28,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-15",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        2,
+        4,
+        4,
+        3
+      ],
+      "complement": "5-15",
+      "cardinality": 7,
+      "carter": 4
+    },
+    {
+      "forte": "7-16A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        5,
+        4,
+        3,
+        2
+      ],
+      "complement": "5-16B",
+      "cardinality": 7,
+      "carter": 20
+    },
+    {
+      "forte": "7-16B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        5,
+        4,
+        3,
+        2
+      ],
+      "complement": "5-16A",
+      "cardinality": 7,
+      "carter": 20,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "forte": "7-Z17",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        5,
+        4,
+        1
+      ],
+      "complement": "5-Z17",
+      "cardinality": 7,
+      "carter": 10
+    },
+    {
+      "forte": "7-Z18A",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-Z18B",
+      "cardinality": 7,
+      "carter": 35
+    },
+    {
+      "forte": "7-Z18B",
+      "primeForm": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-Z18A",
+      "cardinality": 7,
+      "carter": 35,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-19A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "complement": "5-19B",
+      "cardinality": 7,
+      "carter": 31
+    },
+    {
+      "forte": "7-19B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "complement": "5-19A",
+      "cardinality": 7,
+      "carter": 31,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-20A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        4,
+        5,
+        2
+      ],
+      "complement": "5-20B",
+      "cardinality": 7,
+      "carter": 34,
+      "name": "Persian scale"
+    },
+    {
+      "forte": "7-20B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        4,
+        3,
+        3,
+        4,
+        5,
+        2
+      ],
+      "complement": "5-20A",
+      "cardinality": 7,
+      "carter": 34,
+      "name": "Heptatonic blues scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-21A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        9
+      ],
+      "icv": [
+        4,
+        2,
+        4,
+        6,
+        4,
+        1
+      ],
+      "complement": "5-21B",
+      "cardinality": 7,
+      "carter": 21
+    },
+    {
+      "forte": "7-21B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        9
+      ],
+      "icv": [
+        4,
+        2,
+        4,
+        6,
+        4,
+        1
+      ],
+      "complement": "5-21A",
+      "cardinality": 7,
+      "carter": 21,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-22",
+      "primeForm": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        4,
+        2,
+        4,
+        5,
+        4,
+        2
+      ],
+      "complement": "5-22",
+      "cardinality": 7,
+      "carter": 8,
+      "name": "Double harmonic scale, Hungarian minor scale"
+    },
+    {
+      "forte": "7-23A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        5,
+        4,
+        3,
+        5,
+        1
+      ],
+      "complement": "5-23B",
+      "cardinality": 7,
+      "carter": 25
+    },
+    {
+      "forte": "7-23B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        5,
+        4,
+        3,
+        5,
+        1
+      ],
+      "complement": "5-23A",
+      "cardinality": 7,
+      "carter": 25,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "forte": "7-24A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        5,
+        3,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-24B",
+      "cardinality": 7,
+      "carter": 22
+    },
+    {
+      "forte": "7-24B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        5,
+        3,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-24A",
+      "cardinality": 7,
+      "carter": 22,
+      "name": "Enigmatic scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-25A",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        5,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-25B",
+      "cardinality": 7,
+      "carter": 24
+    },
+    {
+      "forte": "7-25B",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        5,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-25A",
+      "cardinality": 7,
+      "carter": 24,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "forte": "7-26A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        5,
+        3,
+        2
+      ],
+      "complement": "5-26A",
+      "cardinality": 7,
+      "carter": 26
+    },
+    {
+      "forte": "7-26B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        5,
+        3,
+        2
+      ],
+      "complement": "5-26B",
+      "cardinality": 7,
+      "carter": 26,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-27A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        1
+      ],
+      "complement": "5-27B",
+      "cardinality": 7,
+      "carter": 23
+    },
+    {
+      "forte": "7-27B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        4,
+        5,
+        1
+      ],
+      "complement": "5-27A",
+      "cardinality": 7,
+      "carter": 23,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-28A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "complement": "5-28A",
+      "cardinality": 7,
+      "carter": 36,
+      "name": "Harmonic locrian major scale"
+    },
+    {
+      "forte": "7-28B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "complement": "5-28B",
+      "cardinality": 7,
+      "carter": 36,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-29A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        3,
+        5,
+        2
+      ],
+      "complement": "5-29B",
+      "cardinality": 7,
+      "carter": 32
+    },
+    {
+      "forte": "7-29B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        4,
+        3,
+        5,
+        2
+      ],
+      "complement": "5-29A",
+      "cardinality": 7,
+      "carter": 32,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-30A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        3,
+        5,
+        4,
+        2
+      ],
+      "complement": "5-30B",
+      "cardinality": 7,
+      "carter": 37,
+      "name": "Augmented thirteenth chord, minor Neapolitan scale"
+    },
+    {
+      "forte": "7-30B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        3,
+        4,
+        3,
+        5,
+        4,
+        2
+      ],
+      "complement": "5-30A",
+      "cardinality": 7,
+      "carter": 37,
+      "name": "Harmonic lydian scale",
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-31A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        3,
+        6,
+        3,
+        3,
+        3
+      ],
+      "complement": "5-31B",
+      "cardinality": 7,
+      "carter": 38,
+      "name": "Hungarian major scale"
+    },
+    {
+      "forte": "7-31B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        3,
+        3,
+        6,
+        3,
+        3,
+        3
+      ],
+      "complement": "5-31A",
+      "cardinality": 7,
+      "carter": 38,
+      "name": "Romanian major scale",
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-32A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        3,
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-32B",
+      "cardinality": 7,
+      "carter": 33,
+      "name": "Augmented major thirteenth chord, harmonic minor scale, Ukrainian Dorian scale"
+    },
+    {
+      "forte": "7-32B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        3,
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-32A",
+      "cardinality": 7,
+      "carter": 33,
+      "name": "Half-diminished thirteenth chord, harmonic major scale",
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "7-33",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        3
+      ],
+      "complement": "5-33",
+      "cardinality": 7,
+      "carter": 6,
+      "name": "Major Locrian scale, major Neapolitan scale, Melodic phrygian scale"
+    },
+    {
+      "forte": "7-34",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        2,
+        5,
+        4,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-34",
+      "cardinality": 7,
+      "carter": 9,
+      "name": "Acoustic scale, altered scale, minor major thirteenth chord"
+    },
+    {
+      "forte": "7-35",
+      "primeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        2,
+        5,
+        4,
+        3,
+        6,
+        1
+      ],
+      "complement": "5-35",
+      "cardinality": 7,
+      "carter": 7,
+      "name": "Diatonic scale, major thirteenth chord, minor thirteenth chord"
+    },
+    {
+      "forte": "7-Z36A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-Z36B",
+      "cardinality": 7,
+      "carter": 16
+    },
+    {
+      "forte": "7-Z36B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        4,
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "complement": "5-Z36A",
+      "cardinality": 7,
+      "carter": 16,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "7-Z37",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        5,
+        4,
+        1
+      ],
+      "complement": "5-Z37",
+      "cardinality": 7,
+      "carter": 3
+    },
+    {
+      "forte": "7-Z38A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-Z38B",
+      "cardinality": 7,
+      "carter": 29
+    },
+    {
+      "forte": "7-Z38B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "complement": "5-Z38A",
+      "cardinality": 7,
+      "carter": 29,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "8-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "icv": [
+        7,
+        6,
+        5,
+        4,
+        4,
+        2
+      ],
+      "complement": "4-1",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        6,
+        6,
+        5,
+        5,
+        4,
+        2
+      ],
+      "complement": "4-2B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "icv": [
+        6,
+        6,
+        5,
+        5,
+        4,
+        2
+      ],
+      "complement": "4-2A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "8-3",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "icv": [
+        6,
+        5,
+        6,
+        5,
+        4,
+        2
+      ],
+      "complement": "4-3",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-4A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "complement": "4-4B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-4B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "icv": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        2
+      ],
+      "complement": "4-4A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "8-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        6,
+        5,
+        4,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-5B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        6,
+        5,
+        4,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-5A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "forte": "8-6",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        6,
+        5,
+        4,
+        4,
+        6,
+        3
+      ],
+      "complement": "4-6",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-7",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "icv": [
+        6,
+        4,
+        5,
+        6,
+        5,
+        2
+      ],
+      "complement": "4-7",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-8",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        6,
+        4,
+        4,
+        5,
+        6,
+        3
+      ],
+      "complement": "4-8",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-9",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        6,
+        4,
+        4,
+        4,
+        6,
+        4
+      ],
+      "complement": "4-9",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-10",
+      "primeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        6,
+        6,
+        4,
+        5,
+        2
+      ],
+      "complement": "4-10",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-11A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        6,
+        5,
+        5,
+        5,
+        2
+      ],
+      "complement": "4-11B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-11B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        6,
+        5,
+        5,
+        5,
+        2
+      ],
+      "complement": "4-11A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-12A",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        6,
+        5,
+        4,
+        3
+      ],
+      "complement": "4-12A",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-12B",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        6,
+        5,
+        4,
+        3
+      ],
+      "complement": "4-12B",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-13A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        6,
+        4,
+        5,
+        3
+      ],
+      "complement": "4-13B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-13B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        6,
+        4,
+        5,
+        3
+      ],
+      "complement": "4-13A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-14A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        6,
+        2
+      ],
+      "complement": "4-14A",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-14B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        6,
+        2
+      ],
+      "complement": "4-14B",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-Z15A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-Z15B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-Z15B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-Z15A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-16A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        4,
+        5,
+        6,
+        3
+      ],
+      "complement": "4-16B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-16B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        4,
+        5,
+        6,
+        3
+      ],
+      "complement": "4-16A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-17",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        6,
+        6,
+        5,
+        2
+      ],
+      "complement": "4-17",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-18A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        6,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-18B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-18B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        6,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-18A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-19A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        5,
+        7,
+        5,
+        2
+      ],
+      "complement": "4-19B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-19B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        5,
+        7,
+        5,
+        2
+      ],
+      "complement": "4-19A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "8-20",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        5,
+        4,
+        5,
+        6,
+        6,
+        2
+      ],
+      "complement": "4-20",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-21",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        7,
+        4,
+        6,
+        4,
+        3
+      ],
+      "complement": "4-21",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-22A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        6,
+        5,
+        5,
+        6,
+        2
+      ],
+      "complement": "4-22B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-22B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        6,
+        5,
+        5,
+        6,
+        2
+      ],
+      "complement": "4-22A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "forte": "8-23",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        6,
+        5,
+        4,
+        7,
+        2
+      ],
+      "complement": "4-23",
+      "cardinality": 8,
+      "name": "Bebop dominant scale, bebop major scale"
+    },
+    {
+      "forte": "8-24",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        6,
+        4,
+        7,
+        4,
+        3
+      ],
+      "complement": "4-24",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-25",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        6,
+        4,
+        6,
+        4,
+        4
+      ],
+      "complement": "4-25",
+      "cardinality": 8,
+      "name": "Seventh flat five diminished scale"
+    },
+    {
+      "forte": "8-26",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        5,
+        6,
+        5,
+        6,
+        2
+      ],
+      "complement": "4-26",
+      "cardinality": 8,
+      "name": "Bebop harmonic minor scale"
+    },
+    {
+      "forte": "8-27A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        5,
+        6,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-27B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-27B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        4,
+        5,
+        6,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-27A",
+      "cardinality": 8,
+      "name": "Bebop melodic minor scale",
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "forte": "8-28",
+      "primeForm": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "icv": [
+        4,
+        4,
+        8,
+        4,
+        4,
+        4
+      ],
+      "complement": "4-28",
+      "cardinality": 8,
+      "name": "Octatonic scale"
+    },
+    {
+      "forte": "8-Z29A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-Z29B",
+      "cardinality": 8
+    },
+    {
+      "forte": "8-Z29B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "complement": "4-Z29A",
+      "cardinality": 8,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "9-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "icv": [
+        8,
+        7,
+        6,
+        6,
+        6,
+        3
+      ],
+      "complement": "3-1",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-2A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        7,
+        7,
+        7,
+        6,
+        6,
+        3
+      ],
+      "complement": "3-2B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-2B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "icv": [
+        7,
+        7,
+        7,
+        6,
+        6,
+        3
+      ],
+      "complement": "3-2A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "9-3A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        7,
+        7,
+        6,
+        3
+      ],
+      "complement": "3-3B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-3B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        7,
+        7,
+        6,
+        3
+      ],
+      "complement": "3-3A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "9-4A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        6,
+        7,
+        7,
+        3
+      ],
+      "complement": "3-4B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-4B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        6,
+        7,
+        7,
+        3
+      ],
+      "complement": "3-4A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "9-5A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        6,
+        6,
+        7,
+        4
+      ],
+      "complement": "3-5B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-5B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        7,
+        6,
+        6,
+        6,
+        7,
+        4
+      ],
+      "complement": "3-5A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "forte": "9-6",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        8,
+        6,
+        7,
+        6,
+        3
+      ],
+      "complement": "3-6",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-7A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        7,
+        7,
+        6,
+        7,
+        3
+      ],
+      "complement": "3-7B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-7B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        7,
+        7,
+        6,
+        7,
+        3
+      ],
+      "complement": "3-7A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "forte": "9-8A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        7,
+        6,
+        7,
+        6,
+        4
+      ],
+      "complement": "3-8B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-8B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        7,
+        6,
+        7,
+        6,
+        4
+      ],
+      "complement": "3-8A",
+      "cardinality": 9,
+      "name": "Mahler 10 chord",
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "forte": "9-9",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        6,
+        7,
+        6,
+        6,
+        8,
+        3
+      ],
+      "complement": "3-9",
+      "cardinality": 9,
+      "name": "Blues scale"
+    },
+    {
+      "forte": "9-10",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "icv": [
+        6,
+        6,
+        8,
+        6,
+        6,
+        4
+      ],
+      "complement": "3-10",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-11A",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "icv": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        3
+      ],
+      "complement": "3-11B",
+      "cardinality": 9
+    },
+    {
+      "forte": "9-11B",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "icv": [
+        6,
+        6,
+        7,
+        7,
+        7,
+        3
+      ],
+      "complement": "3-11A",
+      "cardinality": 9,
+      "forteAltPrimeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "forte": "9-12",
+      "primeForm": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "icv": [
+        6,
+        6,
+        6,
+        9,
+        6,
+        3
+      ],
+      "complement": "3-12",
+      "cardinality": 9,
+      "name": "Messiaen's third mode (enneatonic/hyper-hexatonic)"
+    },
+    {
+      "forte": "10-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "icv": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        4
+      ],
+      "complement": "2-1",
+      "cardinality": 10
+    },
+    {
+      "forte": "10-2",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "icv": [
+        8,
+        9,
+        8,
+        8,
+        8,
+        4
+      ],
+      "complement": "2-2",
+      "cardinality": 10
+    },
+    {
+      "forte": "10-3",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "icv": [
+        8,
+        8,
+        9,
+        8,
+        8,
+        4
+      ],
+      "complement": "2-3",
+      "cardinality": 10
+    },
+    {
+      "forte": "10-4",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "icv": [
+        8,
+        8,
+        8,
+        9,
+        8,
+        4
+      ],
+      "complement": "2-4",
+      "cardinality": 10
+    },
+    {
+      "forte": "10-5",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "icv": [
+        8,
+        8,
+        8,
+        8,
+        9,
+        4
+      ],
+      "complement": "2-5",
+      "cardinality": 10
+    },
+    {
+      "forte": "10-6",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "icv": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        5
+      ],
+      "complement": "2-6",
+      "cardinality": 10,
+      "name": "Messiaen's seventh mode"
+    },
+    {
+      "forte": "11-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "icv": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        5
+      ],
+      "complement": "1-1",
+      "cardinality": 11,
+      "name": "Northern lights chord"
+    },
+    {
+      "forte": "12-1",
+      "primeForm": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "icv": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        6
+      ],
+      "complement": "0-1",
+      "cardinality": 12,
+      "name": "Aggregate, all-interval twelve-tone row"
+    }
+  ]
+}

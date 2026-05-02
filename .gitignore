@@ -1,0 +1,16 @@
+.DS_Store
+
+.vscode/
+.cursor/
+
+freezer/
+notes/
+
+imgs/extra-imgs/
+
+.env
+src/.env
+
+src/node_modules/
+src/.next/
+src/.DS_Store

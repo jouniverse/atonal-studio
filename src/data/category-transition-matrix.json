@@ -1,0 +1,12 @@
+{
+  "description": "Category Transition Matrix - probability of ic-category j following ic-category i. Based on Honingh/Weyde/Conklin statistical model.",
+  "categories": ["ic1 (m2/M7)", "ic2 (M2/m7)", "ic3 (m3/M6)", "ic4 (M3/m6)", "ic5 (P4/P5)", "ic6 (TT)"],
+  "matrix": [
+    [0.25, 0.15, 0.20, 0.15, 0.15, 0.10],
+    [0.15, 0.20, 0.20, 0.20, 0.15, 0.10],
+    [0.18, 0.18, 0.22, 0.18, 0.14, 0.10],
+    [0.15, 0.20, 0.18, 0.22, 0.15, 0.10],
+    [0.15, 0.15, 0.15, 0.15, 0.25, 0.15],
+    [0.12, 0.12, 0.15, 0.12, 0.18, 0.31]
+  ]
+}
