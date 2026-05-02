@@ -61,7 +61,7 @@ The home interface. After generating a composition in any of the three engine vi
 - **Audio engine** — Switch between a sampled grand piano (Salamander) and two synthesiser presets (Synth, Stage).
 - **ADSR envelope** — Attack, Decay, Sustain, Release controls for the synthesiser voices.
 - **Reverb** — Room slider.
-- **Transport** — Play, Stop, Loop toggle, BPM display, and time signature selection. Time signature may vary from the reference signature to create polymetric textures.
+- **Transport** — Play, Stop, Loop toggle, BPM display, and time signature selection.
 - **MIDI export** — Download the composition as a standard MIDI file.
 - **Share link** — Encodes the composition in a URL for sharing.
 
