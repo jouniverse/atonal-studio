@@ -186,6 +186,7 @@ export function IntervalVectorModeView() {
   const composition = useCompositionStore((s) => s.composition);
   const chain = useCompositionStore((s) => s.chain);
   const setBpm = useTransportStore((s) => s.setBpm);
+  const isPlaying = useTransportStore((s) => s.isPlaying);
 
   /* ---- derived data ---- */
   const analysisResult = useMemo(() => {
@@ -371,39 +372,36 @@ export function IntervalVectorModeView() {
   /* ---- render ---- */
   return (
     <div className="h-full flex flex-col bg-[var(--background)]">
-      <div className="flex-1 min-h-0 overflow-y-auto">
-      <div className="p-8 touch:p-3 max-w-6xl mx-auto w-full flex flex-col gap-6">
 
-        {/* ============================================================ */}
-        {/*  HEADER                                                       */}
-        {/* ============================================================ */}
-        <div className="flex justify-between items-end border-b border-[var(--outline-variant)] pb-1">
-          <div>
-            <h1 className="mouse:block touch:hidden font-[family-name:var(--font-inter)] text-[24px] font-semibold tracking-tight text-[var(--on-background)]">
-              Interval Vector Analysis
-            </h1>
-            <h1 className="hidden touch:block font-[family-name:var(--font-inter)] text-[18px] font-semibold tracking-tight text-[var(--on-background)]">
-              Vector
-            </h1>
-            <p className="touch:hidden font-[family-name:var(--font-space-grotesk)] text-[13px] tracking-[0.05em] text-[var(--on-surface-variant)] mt-2">
-              SYS_MOD: VECTOR_ENGINE_V2.1 - Filter and analyse pitch-class sets by their interval-class vector and compose.
-            </p>
-          </div>
-          <div className="flex gap-4">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[var(--outline)]" />
-              <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--outline)]">
-                Idle
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[var(--on-background)]" />
-              <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-background)]">
-                Sync
-              </span>
-            </div>
-          </div>
+      {/* ============================================================ */}
+      {/*  HEADER — full width, outside scroll container               */}
+      {/* ============================================================ */}
+      <div className="shrink-0 px-8 touch:px-3 pt-6 touch:pt-4 pb-4 touch:pb-5 flex justify-between items-end border-b border-[var(--outline-variant)]">
+        <div>
+          <h1 className="mouse:block touch:hidden font-[family-name:var(--font-inter)] text-[24px] font-semibold tracking-tight text-[var(--on-background)]">
+            Interval Vector Analysis
+          </h1>
+          <h1 className="hidden touch:block font-[family-name:var(--font-inter)] text-[18px] font-semibold tracking-tight text-[var(--on-background)]">
+            Vector
+          </h1>
+          <p className="touch:hidden font-[family-name:var(--font-space-grotesk)] text-[13px] tracking-[0.05em] text-[var(--on-surface-variant)] mt-2">
+            SYS_MOD: VECTOR_ENGINE_V2.1 - Filter and analyse pitch-class sets by their interval-class vector and compose.
+          </p>
         </div>
+        <div className="flex items-center gap-2">
+          <span className={`w-2 h-2 rounded-full ${
+            isPlaying
+              ? 'bg-green-400 shadow-[0_0_6px_rgba(74,222,128,0.6)] animate-pulse'
+              : 'bg-[var(--outline)]'
+          }`} />
+          <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)]">
+            {isPlaying ? 'RUNNING' : 'IDLE'}
+          </span>
+        </div>
+      </div>
+
+      <div className="flex-1 min-h-0 overflow-y-auto touch:pb-28">
+      <div className="p-8 touch:p-3 max-w-6xl mx-auto w-full flex flex-col gap-6">
 
         {/* ============================================================ */}
         {/*  BENTO GRID                                                    */}

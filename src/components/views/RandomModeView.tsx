@@ -133,7 +133,7 @@ export function RandomModeView() {
     <div className="h-full flex flex-col bg-[var(--background)] overflow-hidden">
       {/* ─── HEADER ─── */}
       <header className="shrink-0 px-8 touch:px-4 pt-6 touch:pt-4 pb-4 touch:pb-3 border-b border-[var(--outline-variant)]">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between items-center">
           {/* Title block */}
           <div>
             <h1 className="mouse:block touch:hidden font-[family-name:var(--font-inter)] text-[24px] font-semibold leading-[1.2] tracking-[-0.02em] text-[var(--on-background)]">
@@ -182,7 +182,7 @@ export function RandomModeView() {
       </header>
 
       {/* ─── MAIN WORKSPACE ─── */}
-      <div className="flex-1 min-h-0 px-8 touch:px-3 py-6 touch:py-4 overflow-y-auto">
+      <div className="flex-1 min-h-0 px-8 touch:px-3 py-6 touch:py-4 overflow-y-auto touch:pb-40">
         <div className="flex flex-col gap-4 max-w-6xl mx-auto min-h-[min(520px,100%)]">
           {/* PARAMETER CONTROL (full width) + model selector */}
           <div className="flex-1 min-h-0 bg-[var(--surface-container-low)] border border-[var(--outline-variant)] rounded-[2px] flex flex-col overflow-hidden relative min-h-[280px]">

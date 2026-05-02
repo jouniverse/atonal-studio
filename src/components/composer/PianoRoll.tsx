@@ -170,7 +170,7 @@ export function PianoRoll({
                   ? 'border-[var(--outline-variant)]/60'
                   : 'border-[var(--outline-variant)]/20'
               }`}
-              style={{ left: marker.x, height: gridBodyHeight }}
+              style={{ left: marker.x > 0 ? marker.x - 1 : 0, height: gridBodyHeight }}
             />
           ))}
         </div>

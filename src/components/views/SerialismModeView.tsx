@@ -130,6 +130,7 @@ export function SerialismModeView() {
   const composition = useCompositionStore((s) => s.composition);
   const chain = useCompositionStore((s) => s.chain);
   const setBpm = useTransportStore((s) => s.setBpm);
+  const isPlaying = useTransportStore((s) => s.isPlaying);
 
   const matrix = useMemo(() => buildMatrix(params.prime), [params.prime]);
   const activeRow = useMemo(
@@ -210,12 +211,12 @@ export function SerialismModeView() {
 
   return (
     <div className="h-full flex flex-col w-full bg-[var(--surface)]">
-      <div className="flex-1 min-h-0 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
+      <div className="flex-1 min-h-0 overflow-y-auto pb-[env(safe-area-inset-bottom)] touch:pb-28">
       {/* ─── HEADER ─── */}
       <div className="shrink-0 px-[32px] touch:px-4 pt-[24px] touch:pt-4 pb-[16px] touch:pb-3 flex items-center justify-between border-b border-[var(--outline-variant)] bg-[var(--surface-container)]">
         <div>
           <h1 className="mouse:block touch:hidden font-[family-name:var(--font-space-grotesk)] text-[24px] font-semibold tracking-tight text-[var(--on-surface)]">
-            MATRIX GENERATOR
+            Matrix Generator
           </h1>
           <h1 className="hidden touch:block font-[family-name:var(--font-space-grotesk)] text-[18px] font-semibold tracking-tight text-[var(--on-surface)]">
             Matrix
@@ -225,6 +226,16 @@ export function SerialismModeView() {
           </p>
         </div>
         <div className="flex items-center gap-[10px] flex-wrap justify-end">
+          <div className="flex items-center gap-2 mr-2">
+            <span className={`w-2 h-2 rounded-full ${
+              isPlaying
+                ? 'bg-green-400 shadow-[0_0_6px_rgba(74,222,128,0.6)] animate-pulse'
+                : 'bg-[var(--outline)]'
+            }`} />
+            <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)]">
+              {isPlaying ? 'RUNNING' : 'IDLE'}
+            </span>
+          </div>
           <button
             onClick={handleRandomRow}
             type="button"
@@ -242,7 +253,7 @@ export function SerialismModeView() {
           <button
             onClick={() => exportMatrixPdf(matrix)}
             type="button"
-            className="hidden sm:flex h-[36px] px-[16px] font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] rounded-[4px] bg-[var(--on-surface)] text-[var(--surface)] hover:opacity-90 transition-opacity items-center"
+            className="flex h-[36px] px-[16px] font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] rounded-[4px] bg-[var(--on-surface)] text-[var(--surface)] hover:opacity-90 transition-opacity items-center"
           >
             PDF
           </button>

@@ -11,7 +11,7 @@ import { copyShareUrl } from '@/lib/shareComposition';
 import { LinearFader } from '@/components/composer/LinearFader';
 import { ParamDial } from '@/components/composer/ParamDial';
 
-export function TransportBar({ children }: { children?: ReactNode }) {
+export function TransportBar({ children, hideChainOnTouch }: { children?: ReactNode; hideChainOnTouch?: boolean }) {
   const {
     isPlaying,
     setPlaying,
@@ -69,7 +69,7 @@ export function TransportBar({ children }: { children?: ReactNode }) {
   };
 
   return (
-    <div className="border-t border-[var(--outline-variant)] bg-[var(--surface-container-high)] shrink-0 flex flex-col gap-0 py-2 px-4 mb-4 touch:mb-0 deboss-panel">
+    <div className="border-t border-[var(--outline-variant)] bg-[var(--surface-container-high)] touch:bg-[var(--surface-container-high)]/80 touch:bg-black touch:bg-opacity-10 touch:backdrop-blur-lg shrink-0 touch:fixed touch:bottom-16 touch:left-0 touch:right-0 touch:z-40 flex flex-col gap-0 py-2 px-4 mb-4 touch:py-0 touch:mb-0 deboss-panel">
 
       {/* ── ROW 1: transport controls + compose action ── */}
       <div className="flex items-center ml-5 mr-5 touch:mx-2 py-3 gap-10 touch:gap-3 flex-wrap touch:justify-center min-h-[48px]">
@@ -164,11 +164,14 @@ export function TransportBar({ children }: { children?: ReactNode }) {
         {/* Separator before compose section (hidden on touch for compactness) */}
         <div className="w-px h-8 bg-[var(--outline-variant)]/50 shrink-0 touch:hidden" />
 
+        {/* Compose button passed from each view */}
+        {children}
+
         {/* Chain toggle — now next to Compose */}
         <button
           onClick={() => setChain(!chain)}
           title={chain ? 'Chain on — compose appends' : 'Chain off — compose replaces'}
-          className={`flex items-center gap-1 px-2 h-8 rounded-[2px] border transition-colors shadow-sm shrink-0 ${
+          className={`flex items-center gap-1 px-2 h-8 rounded-[2px] border transition-colors shadow-sm shrink-0 ${hideChainOnTouch ? 'touch:hidden' : ''} ${
             chain
               ? 'bg-[var(--on-surface)] text-[var(--surface)] border-[var(--on-surface)]'
               : 'bg-[var(--surface)] text-[var(--on-surface)] border-[var(--outline-variant)] hover:bg-[var(--surface-variant)]'
@@ -178,9 +181,6 @@ export function TransportBar({ children }: { children?: ReactNode }) {
           <span className="material-symbols-outlined text-[18px]">{chain ? 'add_link' : 'link_off'}</span>
           <span className="font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em]">Chain</span>
         </button>
-
-        {/* Compose button passed from each view */}
-        {children}
 
         {/* MIDI export — visible on touch only (desktop has it in Share/Export) */}
         <button

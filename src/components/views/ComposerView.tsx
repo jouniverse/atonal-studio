@@ -48,7 +48,7 @@ export function ComposerView() {
       <header className="h-12 border-b border-[var(--outline-variant)] bg-[var(--surface-container-low)] flex justify-between items-center px-4 md:px-6 shrink-0">
         <div className="flex items-center gap-3 min-w-0">
           <span className="font-[family-name:var(--font-inter)] text-lg md:text-[24px] font-semibold tracking-tight text-[var(--on-surface)] truncate">
-            Atonal Studio
+            Composer
           </span>
           <span className="hidden sm:inline font-[family-name:var(--font-space-grotesk)] text-[10px] uppercase tracking-wider text-[var(--on-surface-variant)]">
             {composition ? `${composition.mode}` : 'no session'}
@@ -109,7 +109,7 @@ export function ComposerView() {
         </div>
       </div>
 
-      <TransportBar />
+      <TransportBar hideChainOnTouch />
     </div>
   );
 }
