@@ -13,4 +13,6 @@ src/.env
 
 src/node_modules/
 src/.next/
+src/tsconfig.tsbuildinfo
+
 src/.DS_Store
