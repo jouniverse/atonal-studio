@@ -71,9 +71,9 @@ Generates pitch-class sequences stochastically. Parameters include:
 
 - **Density** — Notes per bar.
 - **Register range** — Octave span for note placement (the only view where register is manually selectable).
-- **Rhythm entropy** — Controls how freely durations are randomised.
-- **Polyphony** — Maximum simultaneous voices.
-- **Velocity** — Dynamic range of generated notes.
+- **Entropy** — Algorithmic randomness variance.
+- **Repetition** — Controls the likelihood of repeating previous notes.
+- **Drift** — In Brownian mode, controls the step variance.
 
 Several generation models are available (Gaussian, Markov-influenced, etc.). Output updates in a real-time piano-roll preview.
 
@@ -94,7 +94,7 @@ Constructs and analyses twelve-tone rows:
 - **14 × 14 matrix** — Displays all 48 classical row forms: Prime (P), Inversion (I), Retrograde (R), and Retrograde-Inversion (RI), each transposed to all 12 levels, plus row and column labels.
 - **Row highlighting** — Active forms are highlighted in the matrix, with the current sequence also shown.
 - **Composition** — Generates music by chaining selected row forms with configurable rhythm and register parameters.
-- **Export** — Download the matrix as a PDF or CSV.
+- **Export** — Download the twelve-tone matrix as a PDF or CSV.
 
 ---
 

@@ -117,7 +117,7 @@ export function PianoRoll({
       className="flex flex-col rounded border border-[var(--outline-variant)] bg-[var(--surface-bright)] overflow-hidden shrink-0 min-h-0"
       style={{ maxHeight }}
     >
-      <div className="flex-1 min-h-[160px] flex overflow-auto relative blueprint-grid"
+      <div className="flex-1 min-h-[160px] flex overflow-auto relative"
       >
       {/* Y-Axis Labels */}
       <div className="w-12 border-r border-[var(--outline-variant)] bg-[var(--surface-container-lowest)] sticky left-0 z-10 flex flex-col shrink-0"

@@ -38,7 +38,7 @@ const DIAL_ROWS: DialRowConfig[] = [
   {
     key: 'density',
     label: 'DENSITY',
-    description: 'Notes per beat — higher values produce thicker textures',
+    description: 'Notes per bar — higher values produce thicker textures',
     min: 0.5, max: 8, step: 0.5,
   },
   {
