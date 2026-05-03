@@ -6,7 +6,7 @@ import { useTransportStore } from '@/state/useTransportStore';
 import { useCompositionStore } from '@/state/useCompositionStore';
 import { useAudioStore } from '@/state/useAudioStore';
 import { play, stop, setOnTick, disposeSynthForRegen } from '@/engines/common/scheduler';
-import { downloadMidi } from '@/engines/common/midiExport';
+import { downloadMidiToneJs as downloadMidi } from '@/engines/common/midiExportToneJs';
 import { copyShareUrl } from '@/lib/shareComposition';
 import { LinearFader } from '@/components/composer/LinearFader';
 import { ParamDial } from '@/components/composer/ParamDial';
