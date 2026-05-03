@@ -104,8 +104,8 @@ Constructs and analyses twelve-tone rows:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/atonal.git
-cd atonal/src
+git clone https://github.com/your-username/atonal-studio.git
+cd atonal-studio/src
 
 # Install dependencies
 npm install
