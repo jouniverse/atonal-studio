@@ -98,7 +98,7 @@ export function compositionToMidi(composition: Composition): Uint8Array {
 
 export function downloadMidi(composition: Composition, filename?: string): void {
   const data = compositionToMidi(composition);
-  const blob = new Blob([data], { type: 'audio/midi' });
+  const blob = new Blob([data.buffer.slice(0) as ArrayBuffer], { type: 'audio/midi' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
