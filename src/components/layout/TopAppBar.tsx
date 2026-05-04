@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { href: '/composer', label: 'Composer' },
   { href: '/random', label: 'Random' },
   { href: '/interval-vector', label: 'Intervals' },
-  { href: '/serialism', label: 'Serialism' },
+  { href: '/serialism', label: 'Rows' },
 ];
 
 export function TopAppBar() {

@@ -1,6 +1,6 @@
 # Atonal Studio
 
-**Atonal Studio** is a workshop for atonal composition, built on pitch-class set theory. The app lets you generate, analyse, and export atonal music using several compositional models — stochastic generation, interval-class vector similarity, and twelve-tone serialism.
+[**Atonal Studio**](https://atonal-studio.vercel.app) is a workshop for atonal composition, built on pitch-class set theory. The app lets you generate, analyse, and export atonal music using several compositional models — stochastic generation, interval-class vector similarity, and twelve-tone serialism.
 
 ---
 
@@ -183,7 +183,7 @@ The seven ICV distance measures are detailed in the in-app documentation panel (
 
 ## References
 
-<sup>1</sup> Philippe Guillaume, _Music and Acoustics: From Instrument to Computer_, ISTE, 2007.
+<sup>1</sup> Guillaume, 2007.
 
 ## License
 
