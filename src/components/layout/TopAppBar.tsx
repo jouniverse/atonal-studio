@@ -7,7 +7,7 @@ import { useUIStore } from '@/state/useUIStore';
 
 const NAV_LINKS = [
   { href: '/composer', label: 'Composer' },
-  { href: '/random', label: 'Random' },
+  { href: '/random', label: 'Pitches' },
   { href: '/interval-vector', label: 'Intervals' },
   { href: '/serialism', label: 'Rows' },
 ];

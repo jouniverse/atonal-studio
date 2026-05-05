@@ -183,7 +183,7 @@ The seven ICV distance measures are detailed in the in-app documentation panel (
 
 ## References
 
-<sup>1</sup> Guillaume, 2007.
+<sup>1</sup> Guillaume, 2007, pp. 115-25.
 
 ## License
 
