@@ -1,6 +1,6 @@
 import { type PitchClass, mod12, transpose, complement } from '../../kernel/pcMath';
 import { intervalClassVector, type IntervalVector } from '../../kernel/icv';
-import { type DistanceMetric } from '../../kernel/similarity';
+import { distance, type DistanceMetric } from '../../kernel/similarity';
 import { getAllSets, findByIcvConstraint, type PcSetEntry } from '../../kernel/pcSetDb';
 import type { Composition, Note } from '../common/types';
 import { createRng } from '../common/seedRandom';
@@ -22,6 +22,7 @@ export interface IvEngineParams {
   voices: number;
   density: number;
   metric: DistanceMetric;
+  useMetric?: boolean;
   texture?: TextureMode;
 }
 
@@ -39,6 +40,7 @@ export const DEFAULT_IV_PARAMS: IvEngineParams = {
   voices: 1,
   density: 2,
   metric: 'manhattan',
+  useMetric: false,
   texture: 'arpeggio',
 };
 
@@ -102,13 +104,19 @@ export function generateIv(params: IvEngineParams): Composition {
   if (sets.length === 0) {
     sets = getAllSets().filter(s => s.cardinality === 4).slice(0, 4);
   }
+
+  // Pool for metric-guided navigation: all sets sharing any cardinality with the target list
+  const metricPool = params.useMetric
+    ? getAllSets().filter(s => sets.some(t => t.cardinality === s.cardinality))
+    : sets;
+  let currentSetEntry: PcSetEntry = sets[0];
   
   let currentBeat = 0;
   let currentSetIdx = 0;
   let lastPcs: PitchClass[] = sets[0].primeForm;
   
   while (currentBeat < totalBeats) {
-    const currentSet = sets[currentSetIdx % sets.length];
+    const currentSet = params.useMetric ? currentSetEntry : sets[currentSetIdx % sets.length];
     const transposition = rng.nextInt(0, 12);
     let pcs = transpose(currentSet.primeForm, transposition);
     
@@ -169,6 +177,18 @@ export function generateIv(params: IvEngineParams): Composition {
       }
     }
     
+    // Metric-guided navigation: find the next set closest (by ICV distance) to the current set
+    if (params.useMetric) {
+      const candidates = metricPool
+        .filter(s => s.forte !== currentSet.forte)
+        .map(s => ({ s, d: distance(currentSet.icv, s.icv, params.metric) }))
+        .sort((a, b) => a.d - b.d);
+      const topN = candidates.slice(0, 4);
+      if (topN.length > 0) {
+        currentSetEntry = topN[rng.nextInt(0, topN.length)].s;
+      }
+    }
+
     lastPcs = pcs;
     currentBeat = snapBeat(currentBeat + beatsForSet);
     currentSetIdx++;

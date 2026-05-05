@@ -174,6 +174,7 @@ export function IntervalVectorModeView() {
   const [vizMode, setVizMode] = useState<'2d' | '3d'>('2d');
   const [selectedSet, setSelectedSet] = useState<PcSetEntry | null>(null);
   const [metric, setMetric] = useState<DistanceMetric>('manhattan');
+  const [useMetricGuide, setUseMetricGuide] = useState(false);
   const [transposeVal, setTransposeVal] = useState(0);
   const [inverted, setInverted] = useState(false);
   const [browserSearch, setBrowserSearch] = useState('');
@@ -298,14 +299,14 @@ export function IntervalVectorModeView() {
       targetSets = setsForCardinality.slice(0, 4);
     }
     const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
-    const comp = generateIv({ ...params, timeSigNumerator, timeSigDenominator, targetSets, metric });
+    const comp = generateIv({ ...params, timeSigNumerator, timeSigDenominator, targetSets, metric, useMetric: useMetricGuide });
     if (chain && composition) {
       appendComposition(comp);
     } else {
       setComposition(comp);
     }
     setBpm(params.tempo);
-  }, [params, selectedSet, manualAnalysis, setsForCardinality, metric, chain, composition, appendComposition, setComposition, setBpm]);
+  }, [params, selectedSet, manualAnalysis, setsForCardinality, metric, useMetricGuide, chain, composition, appendComposition, setComposition, setBpm]);
 
   const handleAddToSequence = useCallback(() => {
     if (!activeAnalysis) return;
@@ -745,9 +746,35 @@ export function IntervalVectorModeView() {
         <div className="flex flex-col lg:flex-row gap-4">
           {/* Container 1: Distance Metric */}
           <div className="bg-[var(--surface)] border border-[var(--outline-variant)] rounded p-4 flex flex-col gap-8 lg:flex-1 items-left">
-            <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)]">
-              Distance Metric
-            </span>
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)]">
+                Distance Metric
+              </span>
+              <div className="flex rounded border border-[var(--outline-variant)] overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setUseMetricGuide(true)}
+                  className={`px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider ${
+                    useMetricGuide
+                      ? 'bg-[var(--on-surface)] text-[var(--surface)]'
+                      : 'bg-transparent text-[var(--on-surface-variant)] hover:bg-[var(--surface-variant)]'
+                  }`}
+                >
+                  On
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setUseMetricGuide(false)}
+                  className={`px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider border-l border-[var(--outline-variant)] ${
+                    !useMetricGuide
+                      ? 'bg-[var(--on-surface)] text-[var(--surface)]'
+                      : 'bg-transparent text-[var(--on-surface-variant)] hover:bg-[var(--surface-variant)]'
+                  }`}
+                >
+                  Off
+                </button>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-9">
               {(Object.keys(METRIC_LABELS) as DistanceMetric[]).map((m) => (
                 <button
