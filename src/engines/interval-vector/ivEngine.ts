@@ -116,9 +116,13 @@ export function generateIv(params: IvEngineParams): Composition {
       pcs = transpose(currentSet.primeForm, transpForCT);
     }
     
-    // Voice leading from previous set
+    // Voice leading from previous set: reorder pcs so the note closest to each
+    // voice in lastPcs comes first, minimising total semitone movement.
     if (lastPcs.length > 0 && pcs.length > 0) {
-      minimalVoiceLeading(lastPcs, pcs);
+      const vl = minimalVoiceLeading(lastPcs, pcs);
+      const matched = vl.map((pair) => pair.to);
+      const unmatched = pcs.filter((p) => !matched.includes(p));
+      pcs = [...matched, ...unmatched];
     }
     
     // Realize as notes (rhythm snapped to sixteenth-note grid)

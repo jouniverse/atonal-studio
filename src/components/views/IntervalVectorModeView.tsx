@@ -339,8 +339,8 @@ export function IntervalVectorModeView() {
   const handleInjectSequence = useCallback(() => {
     if (sequenceItems.length === 0) return;
     const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
-    const comps = sequenceItems.map((item) =>
-      generateIv({ ...params, bars: seqBars, timeSigNumerator, timeSigDenominator, targetSets: [item.entry], texture: seqTexture, metric }),
+    const comps = sequenceItems.map((item, idx) =>
+      generateIv({ ...params, seed: params.seed + idx, bars: seqBars, timeSigNumerator, timeSigDenominator, targetSets: [item.entry], texture: seqTexture, metric }),
     );
     let offsetBeats = 0;
     const allNotes = comps.flatMap((comp) => {

@@ -601,15 +601,17 @@ export function SerialismModeView() {
                 step={1}
                 onChange={(v) => setParams((p) => ({ ...p, tempo: v }))}
               />
-              <ParamDial
-                label="Note"
-                value={params.noteLengthBeats}
-                min={0.25}
-                max={4}
-                step={0.25}
-                onChange={(v) => setParams((p) => ({ ...p, noteLengthBeats: v }))}
-                formatValue={(v) => `${v} beats`}
-              />
+              <div className={params.rowWalk === 'random' ? 'opacity-30 pointer-events-none' : ''} title={params.rowWalk === 'random' ? 'Note length applies in Sequential mode only' : undefined}>
+                <ParamDial
+                  label="Note"
+                  value={params.noteLengthBeats}
+                  min={0.25}
+                  max={4}
+                  step={0.25}
+                  onChange={(v) => setParams((p) => ({ ...p, noteLengthBeats: v }))}
+                  formatValue={(v) => `${v} beats`}
+                />
+              </div>
             </div>
             <button
               type="button"
