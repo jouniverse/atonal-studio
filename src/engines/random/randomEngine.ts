@@ -82,7 +82,7 @@ export function generateRandom(params: RandomEngineParams): Composition {
       }
       case 'markov': {
         const lastIdx = activePcs.indexOf(lastPc);
-        const weights = lastIdx >= 0 ? markovWeights[lastIdx] : activePcs.map(() => 1);
+        const weights = lastIdx >= 0 ? [...markovWeights[lastIdx]] : activePcs.map(() => 1);
         if (lastIdx >= 0) weights[lastIdx] += params.repetitionBias * 10;
         const totalWeight = weights.reduce((s, w) => s + w, 0);
         let r = rng.next() * totalWeight;

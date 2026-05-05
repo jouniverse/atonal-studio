@@ -46,14 +46,16 @@ export const DEFAULT_IV_PARAMS: IvEngineParams = {
  * Common Tone Theorem: if ICV entry at position j is k,
  * transposing by j (or 12-j for j<6) preserves k common tones.
  */
-function findTranspositionForCommonTones(set: PitchClass[], targetCommonTones: number): number {
+function findTranspositionForCommonTones(set: PitchClass[], targetCommonTones: number, rng: ReturnType<typeof createRng>): number {
   const icv = intervalClassVector(set);
+  const qualifying: number[] = [];
   for (let j = 0; j < 6; j++) {
     if (icv[j] >= targetCommonTones) {
-      return j + 1; // transpose by interval class j+1
+      qualifying.push(j + 1); // transpose by interval class j+1
     }
   }
-  return 1;
+  if (qualifying.length === 0) return 1;
+  return qualifying[rng.nextInt(0, qualifying.length)];
 }
 
 /**
@@ -112,7 +114,7 @@ export function generateIv(params: IvEngineParams): Composition {
     
     // Apply Common Tone Theorem for smooth transitions
     if (notes.length > 0) {
-      const transpForCT = findTranspositionForCommonTones(lastPcs, params.commonTones);
+      const transpForCT = findTranspositionForCommonTones(lastPcs, params.commonTones, rng);
       pcs = transpose(currentSet.primeForm, transpForCT);
     }
     
