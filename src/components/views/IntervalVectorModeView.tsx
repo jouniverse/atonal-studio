@@ -299,7 +299,7 @@ export function IntervalVectorModeView() {
       targetSets = setsForCardinality.slice(0, 4);
     }
     const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
-    const comp = generateIv({ ...params, timeSigNumerator, timeSigDenominator, targetSets, metric, useMetric: useMetricGuide });
+    const comp = generateIv({ ...params, seed: Date.now(), timeSigNumerator, timeSigDenominator, targetSets, metric, useMetric: useMetricGuide });
     if (chain && composition) {
       appendComposition(comp);
     } else {
