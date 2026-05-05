@@ -121,7 +121,7 @@ export function PianoRoll({
       >
       {/* Y-Axis Labels */}
       <div className="w-12 border-r border-[var(--outline-variant)] bg-[var(--surface-container-lowest)] sticky left-0 z-10 flex flex-col shrink-0"
-        style={{ paddingTop: TIMELINE_HEIGHT }}
+        style={{ paddingTop: TIMELINE_HEIGHT, minHeight: contentMinHeight }}
       >
         {rows.map((row) => (
           <div
