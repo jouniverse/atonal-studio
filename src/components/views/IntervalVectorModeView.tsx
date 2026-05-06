@@ -181,6 +181,7 @@ export function IntervalVectorModeView() {
   const [sequenceItems, setSequenceItems] = useState<{ id: string; forte: string; entry: PcSetEntry }[]>([]);
   const [seqTexture, setSeqTexture] = useState<TextureMode>('arpeggio');
   const [seqBars, setSeqBars] = useState(4);
+  const [seqRnd, setSeqRnd] = useState(true);
 
   const setComposition = useCompositionStore((s) => s.setComposition);
   const appendComposition = useCompositionStore((s) => s.appendComposition);
@@ -341,7 +342,7 @@ export function IntervalVectorModeView() {
     if (sequenceItems.length === 0) return;
     const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
     const comps = sequenceItems.map((item, idx) =>
-      generateIv({ ...params, seed: params.seed + idx, bars: seqBars, timeSigNumerator, timeSigDenominator, targetSets: [item.entry], texture: seqTexture, metric }),
+      generateIv({ ...params, seed: seqRnd ? Date.now() + idx : params.seed + idx, bars: seqBars, timeSigNumerator, timeSigDenominator, targetSets: [item.entry], texture: seqTexture, metric }),
     );
     let offsetBeats = 0;
     const allNotes = comps.flatMap((comp) => {
@@ -368,7 +369,7 @@ export function IntervalVectorModeView() {
       setComposition(combined);
     }
     setBpm(params.tempo);
-  }, [sequenceItems, params, seqBars, seqTexture, metric, chain, composition, appendComposition, setComposition, setBpm]);
+  }, [sequenceItems, params, seqBars, seqTexture, seqRnd, metric, chain, composition, appendComposition, setComposition, setBpm]);
 
   const handleSphereSelect = useCallback((forte: string) => {
     const e = findByForte(forte);
@@ -516,14 +517,28 @@ export function IntervalVectorModeView() {
                   <span className="material-symbols-outlined text-[14px]">queue_music</span>
                   Sequence Builder
                 </span>
-                <button
-                  onClick={handleClearSequence}
-                  disabled={sequenceItems.length === 0}
-                  className="font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em] text-[var(--outline)] hover:text-[var(--on-surface)] disabled:opacity-30 transition-colors"
-                  type="button"
-                >
-                  Clear
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setSeqRnd((v) => !v)}
+                    className={`font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em] px-2 py-0.5 rounded border transition-colors ${
+                      seqRnd
+                        ? 'bg-[var(--on-surface)] text-[var(--surface)] border-transparent'
+                        : 'border-[var(--outline-variant)] text-[var(--on-surface-variant)] hover:border-[var(--on-surface)]'
+                    }`}
+                    type="button"
+                    title={seqRnd ? 'Random seed per inject (click to fix)' : 'Fixed seed per inject (click to randomise)'}
+                  >
+                    RND
+                  </button>
+                  <button
+                    onClick={handleClearSequence}
+                    disabled={sequenceItems.length === 0}
+                    className="font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em] text-[var(--outline)] hover:text-[var(--on-surface)] disabled:opacity-30 transition-colors"
+                    type="button"
+                  >
+                    Clear
+                  </button>
+                </div>
               </div>
 
               {/* Add current set to queue */}
