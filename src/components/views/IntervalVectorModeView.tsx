@@ -48,7 +48,7 @@ function PcClock({ activePcs }: { activePcs: PitchClass[] }) {
   const polygonPoints = activePositions.map((p) => `${p.x},${p.y}`).join(' ');
 
   return (
-    <svg viewBox="0 0 200 200" className="w-48 h-48" role="img" aria-label="Pitch-class clock diagram">
+    <svg viewBox="-5 -5 210 210" className="w-48 h-48" role="img" aria-label="Pitch-class clock diagram">
       {/* base circle */}
       <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--outline-variant)" strokeWidth="1" />
 
