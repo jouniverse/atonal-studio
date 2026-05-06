@@ -139,7 +139,7 @@ export function generateIv(params: IvEngineParams): Composition {
     const beatsForSet = snapDuration(Math.max(1, beatsPerBar / params.density));
     const slice = snapDuration(beatsForSet / Math.max(1, pcs.length));
     const effectiveTexture = params.texture ?? 'arpeggio';
-    const isBlock = effectiveTexture === 'block' || (effectiveTexture === 'mixed' && currentSetIdx % 2 === 0);
+    const isBlock = effectiveTexture === 'block' || (effectiveTexture === 'mixed' && rng.next() < 0.5);
     // Pick a sustain scale per set: 0.5 = staccato, 1.0 = normal, 2.0 = legato overlap
     const ARPEGGIO_DURATION_SCALES = [0.5, 0.75, 1.0, 1.0, 1.5, 2.0] as const;
     const arpeggioScale = ARPEGGIO_DURATION_SCALES[rng.nextInt(0, ARPEGGIO_DURATION_SCALES.length)];
