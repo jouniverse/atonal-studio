@@ -192,9 +192,9 @@ export function DocsOverlay() {
               </DefItem>
               <DefItem term="Transformations">
                 <span className="font-mono text-[10px]">Tₙ</span> (transposition by n semitones), 
-                <span className="font-mono text-[10px]"> Iₙ</span> (inversion), 
+                <span className="font-mono text-[10px]"> I</span> (inversion), 
                 <span className="font-mono text-[10px]"> R</span> (retrograde), 
-                <span className="font-mono text-[10px]"> RIₙ</span> (retrograde-inversion). 
+                <span className="font-mono text-[10px]"> RI</span> (retrograde-inversion). 
                 Transposition and inversion preserve the ICV.
               </DefItem>
             </dl>
