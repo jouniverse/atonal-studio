@@ -189,6 +189,7 @@ export function SerialismModeView() {
     const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
     const comp = generateSerial({
       ...params,
+      seed: Date.now(),
       timeSigNumerator,
       timeSigDenominator,
       walkForm: activeForm,
