@@ -37,7 +37,7 @@ export function IcvScatter2D({ metric, referenceIcv, selectedForte, onSelectFort
   return (
     <div className="flex flex-col gap-1.5 w-full">
       <p className="font-[family-name:var(--font-space-grotesk)] text-[9px] text-[var(--outline)] px-0.5">
-        ~351 set-classes · X = {METRIC_LABELS[metric]} distance to active ICV (scaled) · Y = Σ IC · hover for Forte + exact d
+        ~352 set-classes · X = {METRIC_LABELS[metric]} distance to active ICV (scaled) · Y = Σ IC · hover for Forte + exact d
       </p>
       <div className="relative w-full rounded border border-[var(--outline-variant)] bg-black overflow-hidden blueprint-grid min-h-[320px]">
       {tip && (

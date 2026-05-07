@@ -17,7 +17,7 @@ const ENGINES = [
     name: 'Interval Vector Mode',
     icon: 'analytics',
     description:
-      'IC-targeting composition engine. Measures distance from a reference interval-class vector (ICV) across the full Forte catalogue (~351 set-classes) and generates music from the closest matching sets. Supports seven distance metrics. Sequence Builder lets you chain multiple set-classes with independent bar counts.',
+      'IC-targeting composition engine. Measures distance from a reference interval-class vector (ICV) across the full Forte catalogue (~352 set-classes) and generates music from the closest matching sets. Supports seven distance metrics. Sequence Builder lets you chain multiple set-classes with independent bar counts.',
     params: ['Seed', 'Bars', 'BPM', 'Register', 'Voices', 'Density', 'Metric grid', 'Texture', 'Common tones', 'Use complement', 'Distance metric', 'Sequence Bars'],
   },
   {
