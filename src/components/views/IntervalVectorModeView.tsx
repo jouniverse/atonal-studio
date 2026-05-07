@@ -1070,8 +1070,16 @@ export function IntervalVectorModeView() {
           <div className="flex-1 min-h-[300px]">
             <PianoRoll
               composition={composition}
-              registerLow={params.registerLow}
-              registerHigh={params.registerHigh}
+              registerLow={
+                composition && composition.notes.length > 0
+                  ? composition.notes.reduce((m, n) => Math.min(m, n.octave), Infinity)
+                  : params.registerLow
+              }
+              registerHigh={
+                composition && composition.notes.length > 0
+                  ? composition.notes.reduce((m, n) => Math.max(m, n.octave), -Infinity)
+                  : params.registerHigh
+              }
             />
           </div>
         </div>
