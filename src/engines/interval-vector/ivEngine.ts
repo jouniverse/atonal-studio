@@ -93,6 +93,18 @@ function minimalVoiceLeading(from: PitchClass[], to: PitchClass[]): { from: Pitc
 
 export function generateIv(params: IvEngineParams): Composition {
   const rng = createRng(params.seed);
+
+  // Randomly expand register range for timbral variety (no UI needed).
+  // Weighted: [3,5] = 50%, [2,6] = 30%, [1,7] = 20%.
+  const REGISTER_RANGES = [
+    [3, 5], [3, 5], [3, 5], [3, 5], [3, 5],
+    [2, 6], [2, 6], [2, 6],
+    [1, 7], [1, 7],
+  ] as const;
+  const regRange = REGISTER_RANGES[rng.nextInt(0, REGISTER_RANGES.length)];
+  const registerLow = regRange[0];
+  const registerHigh = regRange[1];
+
   const beatsPerBar = params.timeSigNumerator * (4 / params.timeSigDenominator);
   const totalBeats = params.bars * beatsPerBar;
   const notes: Note[] = [];
@@ -141,15 +153,17 @@ export function generateIv(params: IvEngineParams): Composition {
     const effectiveTexture = params.texture ?? 'arpeggio';
     const isBlock = effectiveTexture === 'block' || (effectiveTexture === 'mixed' && rng.next() < 0.5);
     // Pick a sustain scale per set: 0.5 = staccato, 1.0 = normal, 2.0 = legato overlap
-    const ARPEGGIO_DURATION_SCALES = [0.5, 0.75, 1.0, 1.0, 1.5, 2.0] as const;
-    const arpeggioScale = ARPEGGIO_DURATION_SCALES[rng.nextInt(0, ARPEGGIO_DURATION_SCALES.length)];
+    // Absolute per-set note duration, independent of slice/cardinality.
+    // This prevents duration collapsing to the grid minimum for large sets.
+    const ARPEGGIO_DURATIONS = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0, 1.5, 2.0] as const;
+    const noteDuration = ARPEGGIO_DURATIONS[rng.nextInt(0, ARPEGGIO_DURATIONS.length)];
     for (let i = 0; i < pcs.length && currentBeat < totalBeats; i++) {
-      const octave = rng.nextInt(params.registerLow, params.registerHigh + 1);
+      const octave = rng.nextInt(registerLow, registerHigh + 1);
       const start = isBlock ? snapBeat(currentBeat) : snapBeat(currentBeat + i * slice);
       if (start >= totalBeats) break;
       const duration = isBlock
         ? snapDuration(Math.min(beatsForSet, totalBeats - start))
-        : snapDuration(Math.min(slice * arpeggioScale, totalBeats - start));
+        : snapDuration(Math.min(noteDuration, totalBeats - start));
 
       notes.push({
         pc: pcs[i],
@@ -165,7 +179,7 @@ export function generateIv(params: IvEngineParams): Composition {
     if (params.useComplement && params.voices > 1) {
       const comp = complement(pcs).slice(0, Math.min(4, 12 - pcs.length));
       for (let i = 0; i < comp.length && currentBeat < totalBeats; i++) {
-        const octave = Math.max(params.registerLow, rng.nextInt(params.registerLow, params.registerLow + 2));
+        const octave = Math.max(registerLow, rng.nextInt(registerLow, registerLow + 2));
         notes.push({
           pc: comp[i],
           octave,

@@ -125,6 +125,18 @@ export const DEFAULT_SERIALISM_PARAMS: SerialismParams = {
 
 export function generateSerial(params: SerialismParams): Composition {
   const rng = createRng(params.seed);
+
+  // Randomly expand register range for timbral variety (no UI needed).
+  // Weighted: [3,5] = 50%, [2,6] = 30%, [1,7] = 20%.
+  const REGISTER_RANGES = [
+    [3, 5], [3, 5], [3, 5], [3, 5], [3, 5],
+    [2, 6], [2, 6], [2, 6],
+    [1, 7], [1, 7],
+  ] as const;
+  const regRange = REGISTER_RANGES[rng.nextInt(0, REGISTER_RANGES.length)];
+  const registerLow = regRange[0];
+  const registerHigh = regRange[1];
+
   const matrix = buildMatrix(params.prime);
   const beatsPerBar = params.timeSigNumerator * (4 / params.timeSigDenominator);
   const totalBeats = params.bars * beatsPerBar;
@@ -138,7 +150,7 @@ export function generateSerial(params: SerialismParams): Composition {
     for (let s = 0; s < params.statements && currentBeat < totalBeats; s++) {
       for (let i = 0; i < row.length && currentBeat < totalBeats; i++) {
         const pc = row[i];
-        const octave = rng.nextInt(params.registerLow, params.registerHigh + 1);
+        const octave = rng.nextInt(registerLow, registerHigh + 1);
         const dur = snapDuration(Math.min(unit, totalBeats - currentBeat));
         if (dur <= 0) break;
         notes.push({
@@ -166,7 +178,7 @@ export function generateSerial(params: SerialismParams): Composition {
           STANDARD_DURATIONS_BEATS[Math.min(durIdx, STANDARD_DURATIONS_BEATS.length - 1)] ?? 0.5;
         const duration = snapDuration(Math.min(pick, totalBeats - currentBeat));
         if (duration <= 0) break;
-        const octave = rng.nextInt(params.registerLow, params.registerHigh + 1);
+        const octave = rng.nextInt(registerLow, registerHigh + 1);
 
         notes.push({
           pc: row[i],
