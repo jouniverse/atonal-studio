@@ -176,7 +176,10 @@ export function generateSerial(params: SerialismParams): Composition {
       // Probability: monophonic 60%, dyad 25%, trichord 12%, tetrachord 3%.
       let i = 0;
       while (i < row.length) {
-        if (currentBeat >= targetBeats) break;
+        // Use the snapped startBeat for the boundary check — raw currentBeat can be
+        // fractionally below targetBeats while snapBeat rounds it up to or past it.
+        const startBeat = snapBeat(currentBeat);
+        if (startBeat >= targetBeats) break;
 
         const chordRoll = rng.next();
         const chordSize = chordRoll < 0.60 ? 1 : chordRoll < 0.85 ? 2 : chordRoll < 0.97 ? 3 : 4;
@@ -188,7 +191,11 @@ export function generateSerial(params: SerialismParams): Composition {
         const pick =
           STANDARD_DURATIONS_BEATS[Math.min(durIdx, STANDARD_DURATIONS_BEATS.length - 1)] ?? 0.5;
         const duration = snapDuration(pick);
-        const startBeat = snapBeat(currentBeat);
+        // Clamp note duration so it does not extend past the target boundary.
+        const clampedDuration = Math.max(
+          0.25,
+          snapDuration(Math.min(duration, targetBeats - startBeat)),
+        );
 
         for (let k = 0; k < actualSize; k++) {
           const octave = rng.nextInt(registerLow, registerHigh + 1);
@@ -196,7 +203,7 @@ export function generateSerial(params: SerialismParams): Composition {
             pc: row[i + k],
             octave,
             startBeat,
-            durationBeats: duration,
+            durationBeats: clampedDuration,
             velocity: 0.5 + rng.next() * 0.4,
             voice: 0,
           });
@@ -208,11 +215,15 @@ export function generateSerial(params: SerialismParams): Composition {
     }
   }
 
-  // Actual length: Sequential = statements × row × unit; Random Walk = targetBeats.
-  const totalBeats = currentBeat;
+  // Random Walk length is always exactly targetBeats; Sequential is statements × row × unit.
+  const isRandomWalk = params.rowWalk !== 'sequential';
+  const totalBeats = isRandomWalk ? params.bars * beatsPerBar : currentBeat;
+
+  // Safety filter: discard any note that starts at or beyond the composition boundary.
+  const safeNotes = isRandomWalk ? notes.filter((n) => n.startBeat < totalBeats) : notes;
 
   return {
-    notes,
+    notes: safeNotes,
     tempoChanges: [{ beat: 0, bpm: params.tempo }],
     timeSigChanges: [{ beat: 0, numerator: params.timeSigNumerator, denominator: params.timeSigDenominator }],
     voices: 1,
