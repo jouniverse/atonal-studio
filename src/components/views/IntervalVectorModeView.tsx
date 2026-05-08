@@ -182,6 +182,8 @@ export function IntervalVectorModeView() {
   const [seqTexture, setSeqTexture] = useState<TextureMode>('arpeggio');
   const [seqBars, setSeqBars] = useState(4);
   const [seqRnd, setSeqRnd] = useState(true);
+  const [txBars, setTxBars] = useState(1);
+  const [txTexture, setTxTexture] = useState<TextureMode>('arpeggio');
 
   const setComposition = useCompositionStore((s) => s.setComposition);
   const appendComposition = useCompositionStore((s) => s.appendComposition);
@@ -371,6 +373,28 @@ export function IntervalVectorModeView() {
     setBpm(params.tempo);
   }, [sequenceItems, params, seqBars, seqTexture, seqRnd, metric, chain, composition, appendComposition, setComposition, setBpm]);
 
+  const handleInjectTransformation = useCallback(() => {
+    if (!activePcs.length) return;
+    const { timeSigNumerator, timeSigDenominator } = useTransportStore.getState();
+    const comp = generateIv({
+      ...params,
+      seed: params.seed,
+      bars: txBars,
+      timeSigNumerator,
+      timeSigDenominator,
+      lockedPcs: activePcs,
+      texture: txTexture,
+      metric,
+      useMetric: false,
+    });
+    if (chain && composition) {
+      appendComposition(comp);
+    } else {
+      setComposition(comp);
+    }
+    setBpm(params.tempo);
+  }, [activePcs, params, txBars, txTexture, metric, chain, composition, appendComposition, setComposition, setBpm]);
+
   const handleSphereSelect = useCallback((forte: string) => {
     const e = findByForte(forte);
     if (e) {
@@ -511,7 +535,7 @@ export function IntervalVectorModeView() {
             </div>
 
             {/* --- Sequence Builder --- */}
-            <div className="bg-[var(--surface-container-low)] border border-[var(--outline-variant)] rounded p-4">
+            <div className="bg-[var(--surface-container-low)] border border-[var(--outline-variant)] rounded p-4 flex flex-col">
               <div className="flex justify-between items-center mb-3">
                 <span className="font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)] flex items-center gap-1.5">
                   <span className="material-symbols-outlined text-[14px]">queue_music</span>
@@ -558,7 +582,7 @@ export function IntervalVectorModeView() {
               </div>
 
               {/* Queue list */}
-              <div className="flex flex-col gap-1 mb-3 max-h-[108px] overflow-y-auto">
+              <div className="flex flex-col gap-1 mb-3 max-h-[96px] overflow-y-auto">
                 {sequenceItems.length === 0 ? (
                   <div className="font-[family-name:var(--font-space-grotesk)] text-[9px] text-[var(--outline)] text-center py-2 italic">
                     Queue is empty — add sets above
@@ -684,8 +708,17 @@ export function IntervalVectorModeView() {
                     Pitch-Class Space
                   </span>
                 </div>
-                <div className="my-4">
+                <div className="flex-1 flex items-center justify-center my-2">
                   <PcClock activePcs={activePcs} />
+                </div>
+                {/* Transformation result — shown here so the clock stays centered */}
+                <div className="w-full flex items-center justify-between gap-2 border-t border-[var(--surface-variant)] pt-3">
+                  <span className="font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em] text-[var(--outline)]">
+                    Result T{transposeVal}{inverted ? 'I' : ''}
+                  </span>
+                  <span className="font-[family-name:var(--font-space-grotesk)] text-[12px] tracking-[0.05em] text-[var(--on-background)] bg-[var(--surface-container-low)] border border-[var(--surface-variant)] px-2 py-0.5 rounded">
+                    {activePcs.length > 0 ? `{${activePcs.join(', ')}}` : '—'}
+                  </span>
                 </div>
               </div>
 
@@ -749,6 +782,62 @@ export function IntervalVectorModeView() {
                       </span>
                     </div>
                   </div>
+                </div>
+
+                {/* Transformation result */}
+                <div className="border-t border-[var(--surface-variant)] pt-3 flex flex-col gap-3">
+
+                  {/* Texture selector */}
+                  <div className="flex gap-1">
+                    {(['arpeggio', 'block', 'mixed'] as TextureMode[]).map((t) => (
+                      <button
+                        key={t}
+                        onClick={() => setTxTexture(t)}
+                        className={`flex-1 py-1 text-[9px] font-bold uppercase tracking-wider rounded border transition-colors ${
+                          txTexture === t
+                            ? 'bg-[var(--on-surface)] text-[var(--surface)] border-transparent'
+                            : 'border-[var(--outline-variant)] text-[var(--on-surface-variant)] hover:border-[var(--on-surface)]'
+                        }`}
+                        type="button"
+                      >
+                        {t}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Bars selector */}
+                  <div className="flex items-center gap-2">
+                    <span className="font-[family-name:var(--font-inter)] text-[9px] font-bold uppercase tracking-[0.1em] text-[var(--on-surface-variant)] whitespace-nowrap">
+                      Bars
+                    </span>
+                    <div className="flex gap-1">
+                      {[1, 2, 3, 4].map((n) => (
+                        <button
+                          key={n}
+                          onClick={() => setTxBars(n)}
+                          className={`w-7 py-1 text-[9px] font-bold rounded border transition-colors ${
+                            txBars === n
+                              ? 'bg-[var(--on-surface)] text-[var(--surface)] border-transparent'
+                              : 'border-[var(--outline-variant)] text-[var(--on-surface-variant)] hover:border-[var(--on-surface)]'
+                          }`}
+                          type="button"
+                        >
+                          {n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Inject button */}
+                  <button
+                    onClick={handleInjectTransformation}
+                    disabled={!activePcs.length}
+                    className="w-full bg-[var(--on-background)] text-[var(--surface)] hover:opacity-90 disabled:opacity-40 transition-opacity py-2 rounded font-[family-name:var(--font-inter)] text-[11px] font-bold uppercase tracking-[0.1em] flex justify-center items-center gap-2"
+                    type="button"
+                  >
+                    <span className="material-symbols-outlined text-[16px]">add_to_queue</span>
+                    Inject Sequence
+                  </button>
                 </div>
               </div>
             </div>
