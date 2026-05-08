@@ -139,7 +139,6 @@ export function generateSerial(params: SerialismParams): Composition {
 
   const matrix = buildMatrix(params.prime);
   const beatsPerBar = params.timeSigNumerator * (4 / params.timeSigDenominator);
-  const totalBeats = params.bars * beatsPerBar;
   const notes: Note[] = [];
 
   let currentBeat = 0;
@@ -147,37 +146,38 @@ export function generateSerial(params: SerialismParams): Composition {
   if (params.rowWalk === 'sequential') {
     const row = getRowForm(matrix, params.walkForm, params.walkTransposition);
     const unit = snapDuration(params.noteLengthBeats);
-    for (let s = 0; s < params.statements && currentBeat < totalBeats; s++) {
-      for (let i = 0; i < row.length && currentBeat < totalBeats; i++) {
+    // Total length is exactly statements × row-length × note-unit — no external cap.
+    for (let s = 0; s < params.statements; s++) {
+      for (let i = 0; i < row.length; i++) {
         const pc = row[i];
         const octave = rng.nextInt(registerLow, registerHigh + 1);
-        const dur = snapDuration(Math.min(unit, totalBeats - currentBeat));
-        if (dur <= 0) break;
         notes.push({
           pc,
           octave,
           startBeat: snapBeat(currentBeat),
-          durationBeats: dur,
+          durationBeats: unit,
           velocity: 0.5 + rng.next() * 0.35,
           voice: 0,
         });
-        currentBeat = snapBeat(currentBeat + dur);
+        currentBeat = snapBeat(currentBeat + unit);
       }
     }
   } else {
-    while (currentBeat < totalBeats) {
+    // Random Walk: cap at bars × beatsPerBar, but always complete the current row fully.
+    const targetBeats = params.bars * beatsPerBar;
+    while (currentBeat < targetBeats) {
       const form = rng.pick(params.rowForms);
       const transposition = rng.nextInt(0, 12) as PitchClass;
       const row = getRowForm(matrix, form, transposition);
 
-      for (let i = 0; i < row.length && currentBeat < totalBeats; i++) {
+      // Play every note of the row — no mid-row clipping.
+      for (let i = 0; i < row.length; i++) {
         const durIdx = Math.floor(
           rng.next() * (1 + params.rhythmVariation * (STANDARD_DURATIONS_BEATS.length - 1)),
         );
         const pick =
           STANDARD_DURATIONS_BEATS[Math.min(durIdx, STANDARD_DURATIONS_BEATS.length - 1)] ?? 0.5;
-        const duration = snapDuration(Math.min(pick, totalBeats - currentBeat));
-        if (duration <= 0) break;
+        const duration = snapDuration(pick);
         const octave = rng.nextInt(registerLow, registerHigh + 1);
 
         notes.push({
@@ -193,6 +193,10 @@ export function generateSerial(params: SerialismParams): Composition {
       }
     }
   }
+
+  // Actual length: for Sequential this equals statements × row × unit;
+  // for Random Walk it may slightly exceed targetBeats to honour the last full row.
+  const totalBeats = currentBeat;
 
   return {
     notes,
