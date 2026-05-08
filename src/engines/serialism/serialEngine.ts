@@ -163,15 +163,18 @@ export function generateSerial(params: SerialismParams): Composition {
       }
     }
   } else {
-    // Random Walk: cap at bars × beatsPerBar, but always complete the current row fully.
+    // Random Walk: fixed length = bars × beatsPerBar. Walk through random rows,
+    // adding notes one at a time. Stop as soon as the target is reached, even
+    // mid-row — this is the true random-walk behaviour.
     const targetBeats = params.bars * beatsPerBar;
     while (currentBeat < targetBeats) {
       const form = rng.pick(params.rowForms);
       const transposition = rng.nextInt(0, 12) as PitchClass;
       const row = getRowForm(matrix, form, transposition);
 
-      // Play every note of the row — no mid-row clipping.
       for (let i = 0; i < row.length; i++) {
+        if (currentBeat >= targetBeats) break;
+
         const durIdx = Math.floor(
           rng.next() * (1 + params.rhythmVariation * (STANDARD_DURATIONS_BEATS.length - 1)),
         );
@@ -194,8 +197,7 @@ export function generateSerial(params: SerialismParams): Composition {
     }
   }
 
-  // Actual length: for Sequential this equals statements × row × unit;
-  // for Random Walk it may slightly exceed targetBeats to honour the last full row.
+  // Actual length: Sequential = statements × row × unit; Random Walk = targetBeats.
   const totalBeats = currentBeat;
 
   return {
