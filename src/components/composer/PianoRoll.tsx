@@ -46,7 +46,10 @@ export function PianoRoll({
   const highestMidi = isPcMode ? 11 : lowestMidi + totalRows - 1;
 
   const totalBeats = composition?.totalBeats ?? 32;
-  const totalWidth = totalBeats * BEAT_WIDTH;
+  // Use Math.ceil so the grid canvas width always matches the header (which renders
+  // Math.ceil(totalBeats) cells). Without this, non-integer totalBeats cause the
+  // header to extend beyond the grid, shifting gridlines relative to header borders.
+  const totalWidth = Math.ceil(totalBeats) * BEAT_WIDTH;
 
   const rows = useMemo(() => {
     const result: { index: number; label: string; y: number; highlighted: boolean }[] = [];
