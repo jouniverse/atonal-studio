@@ -108,7 +108,7 @@ export const DEFAULT_SERIALISM_PARAMS: SerialismParams = {
   seed: Date.now(),
   prime: [0, 11, 7, 8, 3, 1, 2, 10, 6, 5, 4, 9],
   bars: 8,
-  tempo: 80,
+  tempo: 120,
   registerLow: 3,
   registerHigh: 5,
   rowForms: ['P', 'I', 'R', 'RI'],

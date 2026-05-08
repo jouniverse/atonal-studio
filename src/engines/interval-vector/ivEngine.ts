@@ -31,7 +31,7 @@ export interface IvEngineParams {
 export const DEFAULT_IV_PARAMS: IvEngineParams = {
   seed: Date.now(),
   bars: 8,
-  tempo: 100,
+  tempo: 120,
   timeSigNumerator: 4,
   timeSigDenominator: 4,
   targetSets: [],
