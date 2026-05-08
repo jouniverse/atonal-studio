@@ -166,13 +166,34 @@ export function generateIv(params: IvEngineParams): Composition {
     // This prevents duration collapsing to the grid minimum for large sets.
     const ARPEGGIO_DURATIONS = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0, 1.5, 2.0] as const;
     const noteDuration = ARPEGGIO_DURATIONS[rng.nextInt(0, ARPEGGIO_DURATIONS.length)];
+    // Partial chord: when in block mode, 35% chance to play only a subset of pcs
+    // simultaneously and arpeggiate the remainder within the same time window.
+    // Requires at least 3 pcs so there is at least 1 note left for the arpeggio tail.
+    const blockDuration = snapDuration(Math.min(beatsForSet, totalBeats - snapBeat(currentBeat)));
+    const usePartial = isBlock && pcs.length >= 3 && rng.next() >= 0.65;
+    const chordSize = usePartial
+      ? Math.min(rng.nextInt(2, 4), pcs.length - 1)
+      : isBlock ? pcs.length : 0;
+    let tailIdx = 0;
     for (let i = 0; i < pcs.length && currentBeat < totalBeats; i++) {
       const octave = rng.nextInt(registerLow, registerHigh + 1);
-      const start = isBlock ? snapBeat(currentBeat) : snapBeat(currentBeat + i * slice);
+      let start: number;
+      let duration: number;
+      if (isBlock && i < chordSize) {
+        // Chord note: all simultaneous at currentBeat
+        start = snapBeat(currentBeat);
+        duration = blockDuration;
+      } else if (isBlock) {
+        // Arpeggio tail following the partial chord
+        start = snapBeat(currentBeat + (tailIdx + 1) * slice);
+        duration = snapDuration(Math.min(noteDuration, totalBeats - start));
+        tailIdx++;
+      } else {
+        // Normal arpeggio
+        start = snapBeat(currentBeat + i * slice);
+        duration = snapDuration(Math.min(noteDuration, totalBeats - start));
+      }
       if (start >= totalBeats) break;
-      const duration = isBlock
-        ? snapDuration(Math.min(beatsForSet, totalBeats - start))
-        : snapDuration(Math.min(noteDuration, totalBeats - start));
 
       notes.push({
         pc: pcs[i],

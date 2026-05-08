@@ -172,8 +172,15 @@ export function generateSerial(params: SerialismParams): Composition {
       const transposition = rng.nextInt(0, 12) as PitchClass;
       const row = getRowForm(matrix, form, transposition);
 
-      for (let i = 0; i < row.length; i++) {
+      // Walk through the row, occasionally grouping consecutive notes into chords.
+      // Probability: monophonic 60%, dyad 25%, trichord 12%, tetrachord 3%.
+      let i = 0;
+      while (i < row.length) {
         if (currentBeat >= targetBeats) break;
+
+        const chordRoll = rng.next();
+        const chordSize = chordRoll < 0.60 ? 1 : chordRoll < 0.85 ? 2 : chordRoll < 0.97 ? 3 : 4;
+        const actualSize = Math.min(chordSize, row.length - i);
 
         const durIdx = Math.floor(
           rng.next() * (1 + params.rhythmVariation * (STANDARD_DURATIONS_BEATS.length - 1)),
@@ -181,17 +188,21 @@ export function generateSerial(params: SerialismParams): Composition {
         const pick =
           STANDARD_DURATIONS_BEATS[Math.min(durIdx, STANDARD_DURATIONS_BEATS.length - 1)] ?? 0.5;
         const duration = snapDuration(pick);
-        const octave = rng.nextInt(registerLow, registerHigh + 1);
+        const startBeat = snapBeat(currentBeat);
 
-        notes.push({
-          pc: row[i],
-          octave,
-          startBeat: snapBeat(currentBeat),
-          durationBeats: duration,
-          velocity: 0.5 + rng.next() * 0.4,
-          voice: 0,
-        });
+        for (let k = 0; k < actualSize; k++) {
+          const octave = rng.nextInt(registerLow, registerHigh + 1);
+          notes.push({
+            pc: row[i + k],
+            octave,
+            startBeat,
+            durationBeats: duration,
+            velocity: 0.5 + rng.next() * 0.4,
+            voice: 0,
+          });
+        }
 
+        i += actualSize;
         currentBeat = snapBeat(currentBeat + duration);
       }
     }
