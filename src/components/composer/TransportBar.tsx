@@ -72,7 +72,7 @@ export function TransportBar({ children, hideChainOnTouch }: { children?: ReactN
     <div className="border-t border-[var(--outline-variant)] bg-[var(--surface-container-high)] touch:bg-[var(--surface-container-high)]/80 touch:bg-black touch:bg-opacity-10 touch:backdrop-blur-lg shrink-0 touch:fixed touch:bottom-16 touch:left-0 touch:right-0 touch:z-40 flex flex-col gap-0 py-2 px-4 mb-0 touch:py-0 touch:mb-0 deboss-panel">
 
       {/* ── ROW 1: transport controls + compose action ── */}
-      <div className="flex items-center ml-5 mr-5 touch:mx-2 py-3 gap-10 touch:gap-3 flex-wrap touch:justify-center min-h-[48px]">
+      <div className="flex items-center ml-5 mr-5 touch:mx-2 py-3 gap-8 touch:gap-3 flex-wrap touch:justify-center min-h-[48px]">
 
         {/* Play / Stop / Loop */}
         <div className="flex items-center gap-1.5 p-1.5 bg-[var(--surface-container)] rounded-sm border border-[var(--outline-variant)]/50 emboss-control shrink-0 max-sm:w-full max-sm:justify-center">
